@@ -2,6 +2,9 @@
 
 int main()
 {
-    printf("second test \n");
+    printf("%d \n", 1);
+    printf("%f \n", 3.14);
+    printf("%g \n", 3.14);
+    printf("%c \n", 'a');
     return 0;
 }
