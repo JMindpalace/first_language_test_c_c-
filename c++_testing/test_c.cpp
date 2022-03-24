@@ -8,5 +8,7 @@ int main()
 
     cout << "hey" << endl;
 
+    cout << "hi" << endl;
+
     return 0;
 }
