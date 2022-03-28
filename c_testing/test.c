@@ -2,17 +2,13 @@
 
 int main()
 {
-    printf("%d %f %g %c\n", 1, 3.14, 3.14, 'a');
+    int a=0 , b=0;
+    printf("숫자 1 입력 : \n");
+    scanf("%d", &a);
+    printf("숫자 2 입력 : \n");
+    scanf("%d", &b);
 
-    int a = 1 , b = 2;
-    int sum = a+b;
-    
-    printf("%d + %d = %d /n", a, b, a+b);
-    printf("%d + %d = %d /n", a, b, sum);
-
-    int aa;
-    scanf("%d", &aa);
-
+    printf("두 숫자의 합은 %d입니다", a+b);
 
     return 0;
 }
