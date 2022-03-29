@@ -29,3 +29,31 @@
 	// int a, b, c, d, e; scanf("%1d%1d%1d%1d%1d",&a,&b,&c,&d,&e);printf("[%d0000]\n[%d000]\n[%d00]\n[%d0]\n[%d]", a,b,c,d,e);  - 정수 1개 입력받아 1줄에 10단위만큼 출력
 	// int a, b, c; scanf("%d:%d:%d", &a, &b, &c); printf("%01d", b); - 시분초를 입력받아 분만 출력
 	// int y, m, d; scanf("%d.%d.%d", &y, &m, &d); printf("%02d-%02d-%04d", d, m, y); - 연월일(yyyy.mm.dd)을 입력받아 지정 형식(dd-mm-yyyy)으로 출력
+
+/* 28~30 datatype */
+	// unsigned int a; scanf("%u", &a); printf("%u", a);  - 정수 1개 입력받아 출력(단, 0이상만 입출력)
+	// double a; scanf("%lf", &a); printf("%.11lf", a); - 실수 1개 입력받아 출력(단, float는 +-1.7*10^+-138 / double은 +-3.4*10^+-308)
+	// long long int a; scanf("%lld", &a); printf("%lld", a);  - 정수 1개 입력받아 출력(단, +-9백경)
+
+/* 31~37 printtype */   // int a;
+	// scanf("%d", &a); printf("%o", a); - 10진수 정수 1개 입력받아 8진수 정수로 출력
+	// scanf("%d", &a); printf("%x", a); - 10진수 정수 1개 입력받아 16진수 정수(x는 소문자, X는 대문자)로 출력
+	// scanf("%o", &a); printf("%d", a); - 8진수 정수 1개 입력받아 10진수 정수로 출력
+	// scanf("%x", &a); printf("%o", a); - 16진수 정수 1개 입력받아 8진수 정수로 출력
+	// scanf("%c", &a); printf("%d", a); - 영문자 1개 입력받아 10진수 정수로 출력
+	// int a; scanf("%d", &a); printf("%c", a); - 정수를 입력받아 아스키문자로 출력
+
+/* 38~46 + - / * mathematics */   // int a;
+	// long long int a,b; scanf("%lld %lld", &a, &b); printf("%lld", a+b);  -  정수 2개 입력받아 합 출력하기
+	// int a; scanf("%d", &a); printf("%d", -a);  -  입력 받은 수의 반대 부호 붙히기
+	// char a; scanf("%c", &a); printf("%c", a+1);  -  입력 받은 다음 문자를 출력하기
+	// int a, b; scanf("%d %d", &a, &b); printf("%d", a/b);  -  입력 받은 2개의 정수를 나눈 몫 출력하기
+	// unsigned int a, b; scanf("%u %u", &a, &b); printf("%d", a%b);  -  입력 받은 2개의 정수를 나눈 나머지 출력하기
+	// int a; scanf("%d", &a); printf("%d", ++a);  -  입력 받은 수의 +1을 출력하기
+	// int a, b; scanf("%d %d", &a, &b); printf("%d\n%d\n%d\n%d\n%d\n%.2f\n", a+b, a-b, a*b, a/b, a%b, (float)a/b);  -  입력 받은 두 수의 합, 차, 곱, 몫, 나머지, 나눈 값 출력하기
+
+
+
+// git add .
+// git commit -m "history"
+// git push origin master
