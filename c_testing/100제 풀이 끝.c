@@ -4,27 +4,27 @@
 	// printf("Hello\nWorld");  - Hello 다음줄 World
 	// printf("\'Hello\'");  - 'Hello'
 	// printf("\"Hello World\"");  - "Hello World"
-	// printf("\"!@#$$%^&*()\"");  - "!@#$%^&*()"
-	// printf("C:\\Download\\hello.cpp\"");  - "C:\Download\hello.cpp"
+	// printf("\"!@#$%%^&*()\"");  - "!@#$%^&*()"
+	// printf("\"C:\\Download\\hello.cpp\"");  - "C:\Download\hello.cpp"
 	// printf("\u250C\u252C\u2510\n\u251C\u253C\u2524\n\u2514\u2534\u2518");  - 유니코드 출력
 
 /* 10~27 입&출력 */
-	// int a, b, c;
+	// int a, b, c; char x, x1; float y, y1; double z, z1;
 	// scanf("%d", &a); printf("%d", a); - 정수 1개 입력받아 출력
-	// scanf("%c", &a); printf("%c", a); - 문자 1개 입력받아 출력
-	// scanf("%f", &a); printf("%f", a); - 실수 1개 입력받아 출력
+	// scanf("%c", &x); printf("%c", x); - 문자 1개 입력받아 출력
+	// scanf("%f", &y // "lf", &z); printf("%f", y // "lf", &z); - 실수 1개 입력받아 출력
 	// scanf("%d %d", &a, &b); printf("%d %d ", a, b); - 정수 2개 입력받아 출력
-	// scanf("%c %c", &a, &b); printf("%c %c", b, a); - 문자 1개 입력받아 반대로 출력
-	// scanf("%f", &a); printf("%.2f", a); - 실수 1개 입력받아 둘째짜리까지 출력
+	// scanf("%c %c", &x, &x1); printf("%c %c", x1, x); - 문자 1개 입력받아 반대로 출력
+	// scanf("%f", &y); printf("%.2f", y); - 실수 1개 입력받아 둘째짜리까지 출력
 	// scanf("%d", &a); printf("%d %d %d", a, a, a); - 정수 1개 입력받아 3번 출력
 	// scanf("%d:%d", &a, &b); printf("%d:%d", a, b); - 시간을 입력받아 지정 형식(hh:mm)으로 출력
 	// scanf("%d.%d.%d", &a, &b, &c); printf("%04d.%02d.%02d", a, b, c); - 연월일을 입력받아 지정 형식(yyyy.mm.dd)으로 출력
-	// scanf("%d-%d", &a, &b); printf("%06d%d", a, b); - 주민번호를 입력받아 지정 형식(13자리 숫자, -으로 앞뒤 구분)으로 출력
+	// scanf("%d-%d", &a, &b); printf("%06d%07d", a, b); - 주민번호를 입력받아 지정 형식(13자리 숫자, -으로 앞뒤 구분)으로 출력
 	// char a[51]; scanf("%s", &a); printf("%s", a); - 단어 1개 입력받아 출력
-	// char a[2001]; fgets(a,2000,stdin); printf("%s", a); - 공백 문자가 포함된 1개 문장 입력받아 출력
+	// char conte[2001]; fgets(conte,2000,stdin); printf("%s", conte); - 공백 문자가 포함된 1개 문장 입력받아 출력
+		// gets(conte); printf("%s", conte);  |  gets(conte); puts(conte);
 	// scanf("%d.%6d",&a,&b); printf("%d\n%d", a, b); - 실수 1개 입력받아 정수부와 실수부로 출력
-		// double a, c; int b; scanf("%lf", &a); b = a/1; c = a-b; printf("%d\n%0.6f", b, c);
-		// #math의 modf()
+		// scanf("%lf", &z); a = z/1; z1 = z-a; printf("%d\n%0.6f", a, z1);  |  #math의 modf()
 	// char a[21]; scanf("%s", &a); for(int i=0; a[i]!='\0'; i++) printf("\'%c\' \n", a[i]); - 단어 1개 입력받아 1줄에 1단어 출력
 	// int a, b, c, d, e; scanf("%1d%1d%1d%1d%1d",&a,&b,&c,&d,&e);printf("[%d0000]\n[%d000]\n[%d00]\n[%d0]\n[%d]", a,b,c,d,e);  - 정수 1개 입력받아 1줄에 10단위만큼 출력
 	// int a, b, c; scanf("%d:%d:%d", &a, &b, &c); printf("%01d", b); - 시분초를 입력받아 분만 출력
@@ -41,17 +41,28 @@
 	// scanf("%o", &a); printf("%d", a); - 8진수 정수 1개 입력받아 10진수 정수로 출력
 	// scanf("%x", &a); printf("%o", a); - 16진수 정수 1개 입력받아 8진수 정수로 출력
 	// scanf("%c", &a); printf("%d", a); - 영문자 1개 입력받아 10진수 정수로 출력
-	// int a; scanf("%d", &a); printf("%c", a); - 정수를 입력받아 아스키문자로 출력
+	// scanf("%d", &a); printf("%c", a); - 정수를 입력받아 아스키문자로 출력
 
-/* 38~46 + - / * mathematics */   // int a;
-	// long long int a,b; scanf("%lld %lld", &a, &b); printf("%lld", a+b);  -  정수 2개 입력받아 합 출력하기
-	// int a; scanf("%d", &a); printf("%d", -a);  -  입력 받은 수의 반대 부호 붙히기
-	// char a; scanf("%c", &a); printf("%c", a+1);  -  입력 받은 다음 문자를 출력하기
-	// int a, b; scanf("%d %d", &a, &b); printf("%d", a/b);  -  입력 받은 2개의 정수를 나눈 몫 출력하기
-	// unsigned int a, b; scanf("%u %u", &a, &b); printf("%d", a%b);  -  입력 받은 2개의 정수를 나눈 나머지 출력하기
-	// int a; scanf("%d", &a); printf("%d", ++a);  -  입력 받은 수의 +1을 출력하기
-	// int a, b; scanf("%d %d", &a, &b); printf("%d\n%d\n%d\n%d\n%d\n%.2f\n", a+b, a-b, a*b, a/b, a%b, (float)a/b);  -  입력 받은 두 수의 합, 차, 곱, 몫, 나머지, 나눈 값 출력하기
+/* 38~46 + - / * mathematics */   // (unsigned) int a, b, c, d; char x; 
+	// scanf("%lld %lld", &a, &b); printf("%lld", a+b);  -  정수 2개 입력받아 합 출력하기
+	// scanf("%d", &a); printf("%d", -a);  -  입력 받은 수의 반대 부호 붙히기
+	// scanf("%c", &x); printf("%c", x+1);  -  입력 받은 다음 문자를 출력하기
+	// scanf("%d %d", &a, &b); printf("%d", a/b / a%b);  -  입력 받은 2개의 정수를 나눈 몫 / 나머지 출력하기
+	// scanf("%d", &a); printf("%d", ++a);  -  입력 받은 수의 +1을 출력하기
+	// scanf("%d %d", &a, &b); printf("%d\n%d\n%d\n%d\n%d\n%.2f\n", a+b, a-b, a*b, a/b, a%b, (float)a/b);  -  입력 받은 두 수의 합, 차, 곱, 몫, 나머지, 나눈 값 출력하기
+	// scanf("%d %d %d", &a, &b, &c); d=a+b+c; printf("%d\n%.1f", d, (float)d/3);  -  입력 받은 3개의 정수를 합과 평균 출력하기
+		// printf("%d\n%.1f", a+b+c, a+b+c/3.0);
 
+/* 47~48 bitshift */  // int a, b; 
+	// scanf("%d", &a); printf("%d", a<<1);  -  입력 받은 정수를 2배로 출력하기
+	// scanf("%d %d", &a, &b); printf("%d", a<<b);  -  입력 받은 정수 a를 2^b배로 출력하기
+
+/* 49~52 compare */   // int a, b; scanf("%d %d", &a, &b); printf("%d", a>b / a==b / b>=a / a!=b);  -  a가 b보다 큼 / a와 b가 같음 / b가 a보다 크거나 같음 / a와 b가 다름
+
+/* 53~58 logic calculation */  // int a, b; 
+	// scanf("%d %d", &a, &b); printf("%d", !a / a&&b / a||b);  -  참/거짓 바꾸기 / 둘 다 참 / 둘 중 하나 참
+	// scanf("%d %d", &a, &b); printf("%d", a^b == (a&&!b)||(!a&&b) / !(a^b) );  -  참&거짓이 다를 때 참 / 같을 때 참
+	// scanf("%d %d", &a, &b); printf("%d", !(a||b) );  -  둘 다 거짓이면 참
 
 
 // git add .
