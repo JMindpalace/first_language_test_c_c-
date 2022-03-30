@@ -75,11 +75,19 @@
 	// scanf("%d %d %d", &a, &b, &c); printf("%d", (a>b?b:a)>c ? c : (a>b?b:a));  -  입력받은 3정수 중 작은 수 출력
 
 /* 65~70 if~eles condition */  // int a, b, c; 
-	// scanf("%d %d %d", &a, &b, &c); if(a%2==0) printf("%d\n", a); if(b%2==0) printf("%d\n", b); if(c%2==0) printf("%d\n", c);  -  
-	// scanf("%d %d %d", &a, &b, &c); if(a%2==0) printf("even\n", a); else printf("odd\n", a);  -  
-		// if(b%2==0) printf("even\n", b); else printf("odd\n", b); if(c%2==0) printf("even\n", c); else printf("odd\n", c);   -  
-	// scanf("%d", &a); if(a>0) printf("plus\n", a); else printf("minus\n", a); if(a%2==0) printf("even\n", a); else printf("odd\n", a);
-	// scanf("%d", &a); if(a==12||a==1||a==2) printf("winter\n"); else if(a==3||a==4||a==5) printf("spring\n"); else if(a==6||a==7||a==8) printf("summer\n"); else printf("fall\n");
+	// scanf("%d %d %d", &a, &b, &c); if(a%2==0) printf("%d\n", a); if(b%2==0) printf("%d\n", b); if(c%2==0) printf("%d\n", c);  -  입력받은 3정수 중 짝수만 출력
+	// scanf("%d %d %d", &a, &b, &c); if(a%2==0) printf("even\n", a); else printf("odd\n", a);  -  입력받은 3정수를 짝/홀수 구분하여 출력
+		// if(b%2==0) printf("even\n", b); else printf("odd\n", b); if(c%2==0) printf("even\n", c); else printf("odd\n", c);
+	// scanf("%d", &a); if(a>0) printf("plus\n", a); else printf("minus\n", a); if(a%2==0) printf("even\n", a); else printf("odd\n", a);  -  입력받은 정수를 짝/홀, 음/양 구분
+	// scanf("%d", &a); if(a>=90) printf("A\n"); else if(a>=70) printf("B\n"); else if(a>=40) printf("C\n"); else printf("D\n");   -  입력받은 점수에따라 등급 부여
+	// scanf("%c", &a); if(c=='A') printf("best!!!\n"); else if(a=='B') printf("good!!\n");  -  입력받은 등급에 따라 의미 부여
+		// else if(a=='C') printf("run!\n"); else if(a=='D') printf("slowly~\n"); else printf("what?\n");
+	// scanf("%c", &a); switch(a) case 'A': printf("best!!!\n"); break; case 'B': printf("good!!\n"); break; case 'C': printf("run!\n"); break;  -  switch문으로 바꾸기
+		// case 'D': printf("slowly~\n"); break; default: printf("what?\n");
+	// scanf("%d", &a); if(a==12||a==1||a==2) printf("winter\n"); else if(a==3||a==4||a==5) printf("spring\n");   -  입력받은 달의 계절 알려주기
+		// else if(a==6||a==7||a==8) printf("summer\n"); else printf("fall\n");
+	// scanf("%d", &a); switch(a) case 12: case 1: case 2: printf("winter\n"); break; case 3: case 4: case 5: printf("spring\n"); break;  -  switch문으로 바꾸기
+	// case 6: case 7: case 8: printf("summer\n"); break; case 9: case 10: case 11: printf("fall\n"); break;
 
 
 // git add .
