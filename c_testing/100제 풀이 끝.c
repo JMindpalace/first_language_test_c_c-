@@ -61,8 +61,25 @@
 
 /* 53~58 logic calculation */  // int a, b; 
 	// scanf("%d %d", &a, &b); printf("%d", !a / a&&b / a||b);  -  참/거짓 바꾸기 / 둘 다 참 / 둘 중 하나 참
-	// scanf("%d %d", &a, &b); printf("%d", a^b == (a&&!b)||(!a&&b) / !(a^b) );  -  참&거짓이 다를 때 참 / 같을 때 참
+	// scanf("%d %d", &a, &b); printf("%d", a^b == (a&&!b)||(!a&&b) / !(a^b) );  -  참&거짓이 다를 때(XOR) 참 / 같을 때 참
 	// scanf("%d %d", &a, &b); printf("%d", !(a||b) );  -  둘 다 거짓이면 참
+
+/* 59~62 bit logic calculation */  // int a, b; 
+	// scanf("%d", &a); printf("%d", ~a);  -  비트단위로 NOT 출력
+	// scanf("%d %d", &a, &b); printf("%d", a&b);  -  비트단위로 AND 출력 - 같은 네트워크에 연결된지 판단, 그래픽처리에 용이
+	// scanf("%d %d", &a, &b); printf("%d", a|b);  -  비트단위로 AND 출력
+	// scanf("%d %d", &a, &b); printf("%d", a^b);  -  비트단위로 XOR 출력 - 비행기 슈팅게임에서 배경과 움직이는 그림(겹치는 부분 중 서로 다른 부분만 처리)
+
+/* 63~64 Simple condition */  // int a, b, c; 
+	// scanf("%d %d", &a, &b); printf("%d", a>b?a:b);  -  입력받은 2정수 중 큰 수 출력
+	// scanf("%d %d %d", &a, &b, &c); printf("%d", (a>b?b:a)>c ? c : (a>b?b:a));  -  입력받은 3정수 중 작은 수 출력
+
+/* 65~70 if~eles condition */  // int a, b, c; 
+	// scanf("%d %d %d", &a, &b, &c); if(a%2==0) printf("%d\n", a); if(b%2==0) printf("%d\n", b); if(c%2==0) printf("%d\n", c);  -  
+	// scanf("%d %d %d", &a, &b, &c); if(a%2==0) printf("even\n", a); else printf("odd\n", a);  -  
+		// if(b%2==0) printf("even\n", b); else printf("odd\n", b); if(c%2==0) printf("even\n", c); else printf("odd\n", c);   -  
+	// scanf("%d", &a); if(a>0) printf("plus\n", a); else printf("minus\n", a); if(a%2==0) printf("even\n", a); else printf("odd\n", a);
+	// scanf("%d", &a); if(a==12||a==1||a==2) printf("winter\n"); else if(a==3||a==4||a==5) printf("spring\n"); else if(a==6||a==7||a==8) printf("summer\n"); else printf("fall\n");
 
 
 // git add .
