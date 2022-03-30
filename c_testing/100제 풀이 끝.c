@@ -87,7 +87,7 @@
 	// scanf("%d", &a); if(a==12||a==1||a==2) printf("winter\n"); else if(a==3||a==4||a==5) printf("spring\n");   -  입력받은 달의 계절 알려주기
 		// else if(a==6||a==7||a==8) printf("summer\n"); else printf("fall\n");
 	// scanf("%d", &a); switch(a) case 12: case 1: case 2: printf("winter\n"); break; case 3: case 4: case 5: printf("spring\n"); break;  -  switch문으로 바꾸기
-	// case 6: case 7: case 8: printf("summer\n"); break; case 9: case 10: case 11: printf("fall\n"); break;
+		// case 6: case 7: case 8: printf("summer\n"); break; case 9: case 10: case 11: printf("fall\n"); break;
 
 
 // git add .
