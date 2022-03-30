@@ -89,6 +89,20 @@
 	// scanf("%d", &a); switch(a) case 12: case 1: case 2: printf("winter\n"); break; case 3: case 4: case 5: printf("spring\n"); break;  -  switch문으로 바꾸기
 		// case 6: case 7: case 8: printf("summer\n"); break; case 9: case 10: case 11: printf("fall\n"); break;
 
+/* 71~77 repetition */  // int a, b, c; 
+	// play: scanf("%d", &a); if (a != 0) { printf("%d\n", a); goto play; }   -  0 입력까지 출력(단, goto 사용)
+	// c=0; scanf("%d", &a); play: if (a != c++) { scanf("%d", &b); printf("%d\n", b); goto play; }   -  반복할 횟수와 출력할 수 입력(단, goto 사용)
+	// while(1) { scanf("%d", &a); if (a == 0) break; printf("%d\n", a); }   -  0 입력까지 출력(단, while 사용)
+	// scanf("%d", &a); while(a!=0) { printf("%d\n", a); a--; }   -  정수 1개 입력받아 카운트다운 출력(단, while 사용 / 0 출력 금지)
+		// 	for (int i=a; i!=0 ;i--) printf("%d\n", i)    -  for문으로 바꾸기
+	// scanf("%d", &a); while (a != 0) { printf("%d\n", --a); }   -  정수 1개 입력받아 카운트다운 출력(단, while 사용 / 입력받는 수 출력 금지~0 출력)
+		// for (int i=a-1; i!=-1 ; --i) printf("%d\n", i)    -  for문으로 바꾸기
+	// char a, b='a'; scanf("%c", &a); do { printf("%c ", b); ++b; } while ((a+1) != b);   -  입력받은 알파벳까지 출력하기
+		// for (int b = 'a'; a>=b; b++) printf("%c ", b);    -  for문으로 바꾸기
+	// 	scanf("%d", &a); for (int i=0; a>=i ; i++) { printf("%d\n", i); }   -  입력받은 정수까지 출력하기
+
+/* 71~77 repetition */  // int a, b, c; 
+	// 
 
 // git add .
 // git commit -m "history"
