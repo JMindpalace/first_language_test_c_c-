@@ -9,7 +9,8 @@ int main()
 	scanf("%d", &a);
 
 	for (int i = 1; i <= a; i++) {
-		if (a%i == 0) { printf("%d\n", i); }
+		if (i%3 == 0) { printf("* ", i); }
+		else { printf("%d ", i); }
 	}
 
 	return 0;
