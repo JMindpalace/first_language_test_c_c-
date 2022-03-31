@@ -3,12 +3,14 @@
 
 int main()
 {
-	char a;
-	while (1) {
-		scanf("%c", &a);
-		printf("%c\n", a);
-		if (a == 'q') break;
+	int a, sum=0, b;
+	scanf("%d", &a);
+
+	for (int i; a>=sum ;i++) {
+		sum+=i;
+		i=b;
 	}
+	printf("%d", b);
 	return 0;
 }
 
