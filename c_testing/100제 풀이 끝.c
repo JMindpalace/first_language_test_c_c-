@@ -112,11 +112,11 @@
 	// printf("%.1f MB", (((a*b*c*d)/1024)/1024)/8);  -  소리파일(Hz * 체크비트 * 모노/스트레오 * t bit) 저장용량 계산하기
 	// printf("%.2f MB", (((a*b*c)/1024)/1024)/8);  -  그림파일(가로 * 세로 * 1픽셀 bit) 저장용량 계산하기
 	// int sum = 0; scanf("%d", &a); for (int i = 1; a > sum; i++) { sum += i;} printf("%d", sum);  -  입력된 수보다 작을때까지의 합을 출력
-	// for (int i = 1; a >= i; i++) { if (i % 3 != 0) printf("%d ", i); }  -  3배수 통과
-	// for (int i = 1; c > i; i++) { sum += a; } printf("%d ", sum);  -  등차수열 만들기
+	// for (int i = 1; a >= i; i++) { if (i % 3 != 0) printf("%d ", i); }  -  3배수 통과  -  if (i%3==0) continue;
+	// for (int i = 1; c > i; i++) { sum += a; } printf("%d ", sum);  -  등차수열 만들기  - for (int i = 1; c > i; i++, sum += a)
 	// for (int i = 1; c > i; i++) { a *= b; } printf("%.0f", sum);  -  등비수열 만들기
 	// scanf("%lld %lld %lld %lld", &a, &m, &d, &n); for (int i = 1; n > i; i++) { a = a * m + d; } printf("%lld", a);  -  곱합 수열 만들기
-	// 
+	// scanf("%d %d %d", &a, &b, &c); while (d%a != 0 || d % b != 0 || d % c != 0) { d++;; } printf("%d", d);  -  최소공배수 구하기
 
 // git add .
 // git commit -m "history"
