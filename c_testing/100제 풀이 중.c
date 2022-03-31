@@ -1,8 +1,15 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-int main() {
-	
+int main()
+{
+	int a, sum=0;
+	scanf("%d", &a);
+
+	for (int b = 1; a>=b; b++) {
+		if (b % 2 == 0) sum += b;
+	}
+	printf("%d ", sum);
 	return 0;
 }
 

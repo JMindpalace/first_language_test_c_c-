@@ -101,8 +101,8 @@
 		// for (int b = 'a'; a>=b; b++) printf("%c ", b);    -  for문으로 바꾸기
 	// 	scanf("%d", &a); for (int i=0; a>=i ; i++) { printf("%d\n", i); }   -  입력받은 정수까지 출력하기
 
-/* 71~77 repetition */  // int a, b, c; 
-	// 
+/* 71~77 basic-problem */  // int a, b, c; 
+	// for (int b = 1; a>=b; b++) { if (b % 2 == 0) sum += b; } printf("%d ", sum);  -  짝수 합 구하기
 
 // git add .
 // git commit -m "history"
