@@ -104,19 +104,19 @@
 /* 71~77 basic-problem */  // int a, b, c; 
 	// for (int b = 1; a>=b; b++) { if (b % 2 == 0) sum += b; } printf("%d ", sum);  -  짝수 합 구하기
 	// while (1) { scanf("%c", &a); printf("%c", a); if (a == 'q') break; }  -  원하는 문자 입력까지 반복 출력
-	// int a, sum = 0, b=0; scanf("%d", &a); for (int i=1; a>sum ; i++) { sum += i; b = i; } printf("%d", b);  -  입력된 수까지 커질 때까지 더하다가 마지막 더하는 수 출력
+	// int sum = 0, b=0; scanf("%d", &a); for (int i=1; a>sum ; i++) { sum += i; b = i; } printf("%d", b);  -  입력된 수까지 커질 때까지 더하다가 마지막 더하는 수 출력
 	// for (int i = 1; a >= i; i++) { for (int j = 1; b >= j; j++) printf("%d %d\n", i, j); }  -  주사위 2개의 경우의 수 출력
 	// for (int i = 1; 16>i ; i++) { printf("%X*%X=%X\n", a, i, a*i ); }  -  16진수 구구단
 	// for (int i = 1; a >= i; i++) { if (i % 3 == 0) { printf("X "); } else { printf("%d ", i); } }  -  10이하 3,6,9에 X 출력
 	// for (int i = 0; a > i; i++) { for (int j = 0; b > j; j++) for (int k = 0; c > k; k++) { printf("%d %d %d\n", i, j, k); sum++; } } printf("%d\n", sum);  -  rgb 경우의 수 출력
 	// printf("%.1f MB", (((a*b*c*d)/1024)/1024)/8);  -  소리파일(Hz * 체크비트 * 모노/스트레오 * t bit) 저장용량 계산하기
 	// printf("%.2f MB", (((a*b*c)/1024)/1024)/8);  -  그림파일(가로 * 세로 * 1픽셀 bit) 저장용량 계산하기
-	// int a, sum = 0; scanf("%d", &a); for (int i = 1; a > sum; i++) { sum += i;} printf("%d", sum);  -  입력된 수보다 작을때까지의 합을 출력
+	// int sum = 0; scanf("%d", &a); for (int i = 1; a > sum; i++) { sum += i;} printf("%d", sum);  -  입력된 수보다 작을때까지의 합을 출력
+	// for (int i = 1; a >= i; i++) { if (i % 3 != 0) printf("%d ", i); }  -  3배수 통과
+	// for (int i = 1; c > i; i++) { sum += a; } printf("%d ", sum);  -  등차수열 만들기
+	// for (int i = 1; c > i; i++) { a *= b; } printf("%.0f", sum);  -  등비수열 만들기
+	// scanf("%lld %lld %lld %lld", &a, &m, &d, &n); for (int i = 1; n > i; i++) { a = a * m + d; } printf("%lld", a);  -  곱합 수열 만들기
 	// 
-	// 
-	// 
-	// 
-
 
 // git add .
 // git commit -m "history"
