@@ -104,12 +104,19 @@
 /* 71~77 basic-problem */  // int a, b, c; 
 	// for (int b = 1; a>=b; b++) { if (b % 2 == 0) sum += b; } printf("%d ", sum);  -  짝수 합 구하기
 	// while (1) { scanf("%c", &a); printf("%c", a); if (a == 'q') break; }  -  원하는 문자 입력까지 반복 출력
-	// 	int a, sum = 0, b=0; scanf("%d", &a); for (int i=1; a>sum ; i++) { sum += i; b = i; } printf("%d", b);  -  입력된 수까지 커질 때까지 더하다가 마지막 더하는 수 출력
-	// 	for (int i = 1; a >= i; i++) { for (int j = 1; b >= j; j++) printf("%d %d\n", i, j); }  -  주사위 2개의 경우의 수 출력
+	// int a, sum = 0, b=0; scanf("%d", &a); for (int i=1; a>sum ; i++) { sum += i; b = i; } printf("%d", b);  -  입력된 수까지 커질 때까지 더하다가 마지막 더하는 수 출력
+	// for (int i = 1; a >= i; i++) { for (int j = 1; b >= j; j++) printf("%d %d\n", i, j); }  -  주사위 2개의 경우의 수 출력
+	// for (int i = 1; 16>i ; i++) { printf("%X*%X=%X\n", a, i, a*i ); }  -  16진수 구구단
+	// for (int i = 1; a >= i; i++) { if (i % 3 == 0) { printf("X "); } else { printf("%d ", i); } }  -  10이하 3,6,9에 X 출력
+	// for (int i = 0; a > i; i++) { for (int j = 0; b > j; j++) for (int k = 0; c > k; k++) { printf("%d %d %d\n", i, j, k); sum++; } } printf("%d\n", sum);  -  rgb 경우의 수 출력
 	// 
 	// 
 	// 
 	// 
+	// 
+	// 
+	// 
+
 
 // git add .
 // git commit -m "history"

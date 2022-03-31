@@ -3,12 +3,10 @@
 
 int main()
 {
-	int a;
-	scanf("%X", &a);
+	float a, b, c, d;
+	scanf("%f %f %f %f", &a, &b, &c, &d);
 
-	for (int i = 1; 16>i ; i++) {
-		printf("%X*%X=%X\n", a, i, a*i );
-	}
+	printf("%.1f MB", (((a*b*c*d)/1024)/1024)/8);
 	return 0;
 }
 
