@@ -3,14 +3,13 @@
 
 int main()
 {
-	int a, sum=0, b;
-	scanf("%d", &a);
+	int a, b;
+	scanf("%d %d", &a, &b);
 
-	for (int i; a>=sum ;i++) {
-		sum+=i;
-		i=b;
+	for (int i=1; i>=a ; i++) {
+		for(int j=1; j>=a ; j++)
+			printf("%d %d", i, j);
 	}
-	printf("%d", b);
 	return 0;
 }
 
