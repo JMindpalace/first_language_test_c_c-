@@ -3,15 +3,18 @@
 
 int main()
 {
-	int a, sum=0;
-	scanf("%d", &a);
-
-	for (int b = 1; a>=b; b++) {
-		if (b % 2 == 0) sum += b;
+	char a;
+	while (1) {
+		scanf("%c", &a);
+		printf("%c\n", a);
+		if (a == 'q') break;
 	}
-	printf("%d ", sum);
 	return 0;
 }
 
 // (i%10 == 3 || i % 10 == 6 || i % 10 == 9)  - 일의자리 3,6,9
 // 1 121 12421 1248421 || 팰린드롬수 || 2k-1
+
+// git add .
+// git commit -m "history"
+// git push origin master
