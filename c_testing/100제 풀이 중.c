@@ -3,12 +3,11 @@
 
 int main()
 {
-	int a, b;
-	scanf("%d %d", &a, &b);
+	int a;
+	scanf("%X", &a);
 
-	for (int i=1; i>=a ; i++) {
-		for(int j=1; j>=a ; j++)
-			printf("%d %d", i, j);
+	for (int i = 1; 16>i ; i++) {
+		printf("%X*%X=%X\n", a, i, a*i );
 	}
 	return 0;
 }
