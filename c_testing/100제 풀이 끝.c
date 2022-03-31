@@ -109,9 +109,9 @@
 	// for (int i = 1; 16>i ; i++) { printf("%X*%X=%X\n", a, i, a*i ); }  -  16진수 구구단
 	// for (int i = 1; a >= i; i++) { if (i % 3 == 0) { printf("X "); } else { printf("%d ", i); } }  -  10이하 3,6,9에 X 출력
 	// for (int i = 0; a > i; i++) { for (int j = 0; b > j; j++) for (int k = 0; c > k; k++) { printf("%d %d %d\n", i, j, k); sum++; } } printf("%d\n", sum);  -  rgb 경우의 수 출력
-	// printf("%.1f MB", (((a*b*c*d)/1024)/1024)/8);  -  소리파일 저장용량 계산하기
-	// 
-	// 
+	// printf("%.1f MB", (((a*b*c*d)/1024)/1024)/8);  -  소리파일(Hz * 체크비트 * 모노/스트레오 * t bit) 저장용량 계산하기
+	// printf("%.2f MB", (((a*b*c)/1024)/1024)/8);  -  그림파일(가로 * 세로 * 1픽셀 bit) 저장용량 계산하기
+	// int a, sum = 0; scanf("%d", &a); for (int i = 1; a > sum; i++) { sum += i;} printf("%d", sum);  -  입력된 수보다 작을때까지의 합을 출력
 	// 
 	// 
 	// 
