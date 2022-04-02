@@ -101,7 +101,7 @@
 		// for (int b = 'a'; a>=b; b++) printf("%c ", b);    -  for문으로 바꾸기
 	// 	scanf("%d", &a); for (int i=0; a>=i ; i++) { printf("%d\n", i); }   -  입력받은 정수까지 출력하기
 
-/* 71~77 basic-problem */  // int a, b, c; 
+/* 78~93 basic-problem */  // int a, b, c; 
 	// for (int b = 1; a>=b; b++) { if (b % 2 == 0) sum += b; } printf("%d ", sum);  -  짝수 합 구하기
 	// while (1) { scanf("%c", &a); printf("%c", a); if (a == 'q') break; }  -  원하는 문자 입력까지 반복 출력
 	// int sum = 0, b=0; scanf("%d", &a); for (int i=1; a>sum ; i++) { sum += i; b = i; } printf("%d", b);  -  입력된 수까지 커질 때까지 더하다가 마지막 더하는 수 출력
@@ -117,6 +117,11 @@
 	// for (int i = 1; c > i; i++) { a *= b; } printf("%.0f", sum);  -  등비수열 만들기
 	// scanf("%lld %lld %lld %lld", &a, &m, &d, &n); for (int i = 1; n > i; i++) { a = a * m + d; } printf("%lld", a);  -  곱합 수열 만들기
 	// scanf("%d %d %d", &a, &b, &c); while (d%a != 0 || d % b != 0 || d % c != 0) { d++;; } printf("%d", d);  -  최소공배수 구하기
+
+/* 94~95 1 dimension Array */  // int a[10000] = {} , k; 
+	// for(i=0; i<k; i++) { scanf("%d", &j); a[j]++; } for(i=1; i<=23; i++) { printf("%d ",a[i]); }  -  출석 부른 횟수 카운팅
+	// for(i=0; i<k; i++) scanf("%d", &a[i]); for(i=k-1; i>=0; i--) printf("%d ", a[i]);  -  출석 부른 순서 역순 출력
+	//	for (int i = 0; i < n; i++) { scanf("%d ", &a[i]); if (i==0) { min = a[0]; } if (a[i] < min) { min = a[i]; } } printf("%d ", min);  -  출석 중 가장 빠른 번호는?
 
 // git add .
 // git commit -m "history"
