@@ -3,14 +3,13 @@
 
 int main()
 {
-	int n, a[25] = { 0 }, t;
+	int n, a[24] = { 0 }, t;
 	scanf("%d", &n);
 
-	for (int i = 1; i < n + 1; i++) {
-		scanf("%d ", &t);
-		a[t]++;
+	for (int i = 0; i < n; i++) {
+		scanf("%d ", &a[i]);
 	}
-	for (int i = 1; i < 24; i++) {
+	for (int i = n; i > 0; i--) {
 		printf("%d ", a[i]);
 	}
 	return 0;
