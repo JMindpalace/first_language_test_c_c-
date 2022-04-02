@@ -3,15 +3,17 @@
 
 int main()
 {
-	int n, a[24] = { 0 }, t;
+	int n, a[25], min;
 	scanf("%d", &n);
 
 	for (int i = 0; i < n; i++) {
 		scanf("%d ", &a[i]);
+		if (i==0) { min = a[0]; }
+		if (a[i] < min) {
+			min = a[i];
+		}
 	}
-	for (int i = n; i > 0; i--) {
-		printf("%d ", a[i]);
-	}
+	printf("%d ", min);
 	return 0;
 }
 // (i%10 == 3 || i % 10 == 6 || i % 10 == 9)  - 일의자리 3,6,9
