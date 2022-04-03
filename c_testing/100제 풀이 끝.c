@@ -127,11 +127,11 @@
 	// scanf("%d", &n); for (int i = 1, b=0,c=0 ; i<n+1 ; i++) { scanf("%d %d", &b, &c); a[b][c] = 1; }  -  바둑게임
 
 	// for (int i = 1, b = 0, c = 0; i < n+1; i++) { scanf("%d %d", &b, &c); for (int z = 1; z < 20; z++) { if (a[z][c] == 0) { ++a[z][c]; } else --a[z][c]; }
-	// for (int j = 1; j<20; j++) { if (a[b][j] == 0) { ++a[b][j]; } else --a[b][j]; } }
+	// for (int j = 1; j<20; j++) { if (a[b][j] == 0) { ++a[b][j]; } else --a[b][j]; } }  -  십자 뒤집기(해당 행열 01 바꾸기)
 
-	//
-	//
-	
+	// scanf("%d %d", &a, &b); scanf("%d", &n);
+	// for (int i=0, l=0, d=0, x=0, y=0; i < n; i++) { scanf("%d %d %d %d", &l, &d, &x, &y); for (int j = 1; j < l + 1; j++) { arr[x][y] = 1; if (d == 0) { y++; } else x++; } }
+		
 	//
 	//
 
