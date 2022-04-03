@@ -77,3 +77,26 @@ int main()
 		printf("\n");
 	}
 */
+
+/*
+	int arr[11][11], out=0;
+	for (int i = 1; i <= 10; i++) {
+		for (int j = 1; j <= 10; j++) {
+			scanf("%d", &arr[i][j]);
+		}
+	}
+	for (int i = 2, j = 1; out!=1; ) {
+		if (arr[i][j + 1] == 0) j++;
+		else i++;
+		if (arr[i][j] == 2) {
+			arr[i][j] = 9; out++;
+		}
+		arr[i][j] = 9;
+	}
+	for (int i = 1; i <= 10; i++) {
+		for (int j = 1; j <= 10; j++) {
+			printf("%d ", arr[i][j]);
+		}
+		printf("\n");
+	}
+*/
