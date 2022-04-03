@@ -123,12 +123,11 @@
 	// for(i=0; i<k; i++) scanf("%d", &a[i]); for(i=k-1; i>=0; i--) printf("%d ", a[i]);  -  출석 부른 순서 역순 출력
 	//	for (int i = 0; i < n; i++) { scanf("%d ", &a[i]); if (i==0) { min = a[0]; } if (a[i] < min) { min = a[i]; } } printf("%d ", min);  -  출석 중 가장 빠른 번호는?
 
-/* 96~99 2 dimension Array */   // 	int n, a[21][21] = { 0 };
+/* 96~99 2 dimension Array */   // 	int n, a[21][21] = { 0 };  // 출력 for (int i = 1; i < 20; i++) { for (int j = 1; j < 20; j++) { printf("%d ", a[i][j]); } printf("\n"); }
 	// scanf("%d", &n); for (int i = 1, b=0,c=0 ; i<n+1 ; i++) { scanf("%d %d", &b, &c); a[b][c] = 1; }  -  바둑게임
-	// for (int i = 1; i < 20 ; i++) { for (int j = 1; j < 20 ; j++) { printf("%d ", a[i][j]); } printf("\n"); }
 
-	//
-	//
+	// for (int i = 1, b = 0, c = 0; i < n+1; i++) { scanf("%d %d", &b, &c); for (int z = 1; z < 20; z++) { if (a[z][c] == 0) { ++a[z][c]; } else --a[z][c]; }
+	// for (int j = 1; j<20; j++) { if (a[b][j] == 0) { ++a[b][j]; } else --a[b][j]; } }
 
 	//
 	//
