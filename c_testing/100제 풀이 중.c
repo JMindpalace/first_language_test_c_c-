@@ -19,7 +19,7 @@ int main()
 
 	for (int i = 1, b=0,c=0 ; i<n+1 ; i++) {
 		scanf("%d %d", &b, &c);
-		if(a[b][c] == 0) ++a[b][c];
+		a[b][c] = 1;
 	}
 
 	for (int i = 1; i < 20 ; i++) {
