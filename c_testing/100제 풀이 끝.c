@@ -8,7 +8,7 @@
 	// printf("\"C:\\Download\\hello.cpp\"");  - "C:\Download\hello.cpp"
 	// printf("\u250C\u252C\u2510\n\u251C\u253C\u2524\n\u2514\u2534\u2518");  - 유니코드 출력
 
-/* 10~27 입&출력 */
+/* 10~27 입&출력 */ // 실수 .n으로 실수부 조절이가능하지만 %g는 소수부에 유효숫자만 출력됨
 	// int a, b, c; char x, x1; float y, y1; double z, z1;
 	// scanf("%d", &a); printf("%d", a); - 정수 1개 입력받아 출력
 	// scanf("%c", &x); printf("%c", x); - 문자 1개 입력받아 출력
@@ -129,11 +129,11 @@
 	// for (int i = 1, b = 0, c = 0; i < n+1; i++) { scanf("%d %d", &b, &c); for (int z = 1; z < 20; z++) { if (a[z][c] == 0) { ++a[z][c]; } else --a[z][c]; }
 	// for (int j = 1; j<20; j++) { if (a[b][j] == 0) { ++a[b][j]; } else --a[b][j]; } }  -  십자 뒤집기(해당 행열 01 바꾸기)
 
-	// scanf("%d %d", &a, &b); scanf("%d", &n);
+	// scanf("%d %d", &a, &b); scanf("%d", &n);  -  설탕과자 뽑기
 	// for (int i=0, l=0, d=0, x=0, y=0; i < n; i++) { scanf("%d %d %d %d", &l, &d, &x, &y); for (int j = 1; j < l + 1; j++) { arr[x][y] = 1; if (d == 0) { y++; } else x++; } }
 		
-	//
-	//
+	// for (int i = 1; i <= 10; i++) { for (int j = 1; j <= 10; j++) { scanf("%d", &arr[i][j]); } }
+	// for (int i = 2, j = 1; out!=1; ) { if (arr[i][j + 1] == 0) j++; else i++; if (arr[i][j] == 2) { arr[i][j] = 9; out++; } arr[i][j] = 9; }
 
 // git add .
 // git commit -m "history"
