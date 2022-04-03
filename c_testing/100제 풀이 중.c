@@ -56,3 +56,24 @@ int main()
 		printf("\n");
 	}
 */
+
+/*
+	int a, b, arr[101][101] = {0}, n;
+	scanf("%d %d", &a, &b);
+	scanf("%d", &n);
+
+	for (int i=0, l=0, d=0, x=0, y=0; i < n; i++) {
+		scanf("%d %d %d %d", &l, &d, &x, &y);
+		for (int j = 1; j < l + 1; j++) {
+			arr[x][y] = 1;
+			if (d == 0) { y++; }
+			else x++;
+		}
+	}
+	for (int i = 1; i < a+1; i++) {
+		for (int j = 1; j < b + 1; j++) {
+			printf("%d ", arr[i][j]);
+		}
+		printf("\n");
+	}
+*/
