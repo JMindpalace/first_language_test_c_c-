@@ -3,17 +3,20 @@
 
 int main()
 {
-	int n, a[25], min;
+	int n, a[21][21] = { 0 };
 	scanf("%d", &n);
 
-	for (int i = 0; i < n; i++) {
-		scanf("%d ", &a[i]);
-		if (i==0) { min = a[0]; }
-		if (a[i] < min) {
-			min = a[i];
-		}
+	for (int i = 1, b=0,c=0 ; i<n+1 ; i++) {
+		scanf("%d %d", &b, &c);
+		if(a[b][c] == 0) ++a[b][c];
 	}
-	printf("%d ", min);
+
+	for (int i = 1; i < 20 ; i++) {
+		for (int j = 1; j < 20 ; j++) {
+			printf("%d ", a[i][j]);
+		}
+		printf("\n");
+	}
 	return 0;
 }
 // (i%10 == 3 || i % 10 == 6 || i % 10 == 9)  - 일의자리 3,6,9
