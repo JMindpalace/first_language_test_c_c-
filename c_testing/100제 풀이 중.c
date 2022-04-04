@@ -3,8 +3,30 @@
 
 int main()
 {
+	int n, k, w, v, arr_wv[100][2] = {0}, arr_v_find[100], val_max=0;
+	scanf("%d %d", &n, &k);
+	
+	for (int i = 0; i < n; i++) {
+		scanf("%d %d", &w, &v);
+		arr_wv[i][0] = w; arr_wv[i][1] = v;
+	}
 
-	return 0;
+	for (int i = 0; i < n; i++) {
+		arr_v_find[i] = arr_wv[i][1];
+		for (int j = i+1; j < n; j++) {
+			if ((arr_wv[i][0] + arr_wv[j][0]) > k) { continue; }
+			else { arr_v_find[i] += arr_wv[j][1]; }
+		}
+	}
+
+	val_max = arr_v_find[0];
+	for (int i = 1; i < n; i++) {
+		if (arr_v_find[i] > val_max) {
+			val_max = arr_v_find[i];
+		}
+		else { continue; }
+	}
+	printf("%d", val_max);
 }
 // (i%10 == 3 || i % 10 == 6 || i % 10 == 9)  - 일의자리 3,6,9
 // 1 121 12421 1248421 || 파스칼의 삼각형 || 팰린드롬수 - 2k-1
@@ -12,91 +34,3 @@ int main()
 // git add .
 // git commit -m "history"
 // git push origin master
-
-/*
-	int n, a[21][21] = { 0 };
-	scanf("%d", &n);
-
-	for (int i = 1, b=0,c=0 ; i<n+1 ; i++) {
-		scanf("%d %d", &b, &c);
-		a[b][c] = 1;
-	}
-
-	for (int i = 1; i < 20 ; i++) {
-		for (int j = 1; j < 20 ; j++) {
-			printf("%d ", a[i][j]);
-		}
-		printf("\n");
-	}
-*/
-
-/*
-	int a[21][21] = { 0 }, n;
-	for (int i = 1; i < 20; i++) {
-		for (int j = 1; j < 20; j++) {
-			scanf("%d ", &a[i][j]);
-		}
-	}
-	scanf("%d", &n);
-	for (int i = 1, b = 0, c = 0; i < n+1; i++) {
-		scanf("%d %d", &b, &c);
-		for (int z = 1; z < 20; z++) {
-			if (a[z][c] == 0) { ++a[z][c]; }
-			else --a[z][c];
-		}
-		for (int j = 1; j<20; j++) {
-			if (a[b][j] == 0) { ++a[b][j]; }
-			else --a[b][j];
-		}
-	}
-	for (int i = 1; i < 20; i++) {
-		for (int j = 1; j < 20; j++) {
-			printf("%d ", a[i][j]);
-		}
-		printf("\n");
-	}
-*/
-
-/*
-	int a, b, arr[101][101] = {0}, n;
-	scanf("%d %d", &a, &b);
-	scanf("%d", &n);
-
-	for (int i=0, l=0, d=0, x=0, y=0; i < n; i++) {
-		scanf("%d %d %d %d", &l, &d, &x, &y);
-		for (int j = 1; j < l + 1; j++) {
-			arr[x][y] = 1;
-			if (d == 0) { y++; }
-			else x++;
-		}
-	}
-	for (int i = 1; i < a+1; i++) {
-		for (int j = 1; j < b + 1; j++) {
-			printf("%d ", arr[i][j]);
-		}
-		printf("\n");
-	}
-*/
-
-/*
-	int arr[11][11], out=0;
-	for (int i = 1; i <= 10; i++) {
-		for (int j = 1; j <= 10; j++) {
-			scanf("%d", &arr[i][j]);
-		}
-	}
-	for (int i = 2, j = 1; out!=1; ) {
-		if (arr[i][j + 1] == 0) j++;
-		else i++;
-		if (arr[i][j] == 2) {
-			arr[i][j] = 9; out++;
-		}
-		arr[i][j] = 9;
-	}
-	for (int i = 1; i <= 10; i++) {
-		for (int j = 1; j <= 10; j++) {
-			printf("%d ", arr[i][j]);
-		}
-		printf("\n");
-	}
-*/
