@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS // 가치 반복 하기
 #include <stdio.h>
 int main()
 {
@@ -9,15 +10,18 @@ int main()
 	}
 	for (int i = 0; i < n; i++) {
 		v_find[i] = wv[i][1];
-		for (int j = i+1; j < n; j++) {
-			if ((wv[i][0] + wv[j][0]) > k) { continue; }
+		for (int j = 0; j < n; j++) {
+			if (i == j) { continue; }
 			else {
-				v_find[i] += wv[j][1];
-				if (v_find[i] > val_max) { val_max = v_find[i]; }
+				if ((wv[i][0] + wv[j][0]) > k) { continue; }
+				else {
+					v_find[i] += wv[j][1];
+					if (v_find[i] > val_max) { val_max = v_find[i]; }
+				}
 			}
 		}
 	}
-	printf("%d", val_max);
+	printf("\n %d", val_max);
 	return 0;
 }
 // (i%10 == 3 || i % 10 == 6 || i % 10 == 9)  - 일의자리 3,6,9
