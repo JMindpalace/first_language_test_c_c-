@@ -2,15 +2,18 @@
 #include <stdio.h>
 int main()
 {
-	// 1180 : 휴지통 - 입력 수 10과 1자리 바꾸고 *2  && 50이상이하 멘트 출력
-	int a, r;
-	scanf("%d",&a);
-	r = ((a%10 *10) + (a/10))*2;
-
-	if (r >= 100) { r = r - 100; } // r = r%100;
-	printf("%d\n", r);
-	if (r > 50) { printf("OH MY GOD"); }
-	else { printf("GOOD"); }
+	// 1203 : 비만도 측정 0 -- 비만 판단만하기
+	int a;
+	scanf("%d", &a);
+	if(a <= 10){
+	    printf("정상");
+	}
+	else if(a <= 20){
+	    printf("과체중");
+	}
+	else{
+	    printf("비만");
+	}
 	return 0;
 }
 
