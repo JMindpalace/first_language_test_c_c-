@@ -4,14 +4,15 @@
 
 int main()
 {
-	int a;
-	scanf("%d", &a);
-	while(a!=-1) {
-		printf("%d\n", a);
-		a--;
-	}
-
-	return 0;
+	int a, b, c, d;
+	scanf_s("%d",&a); // 17
+	c = a / 10; // 1
+	b = a % 10; // 7
+	d = ((b*10)+c)*2; // 70+1 71
+	if (d >= 100) { d=d-100; }
+	printf("%d\n", d);
+	if (d > 50) { printf("OH MY GOD"); }
+	else { printf("GOOD"); }
 }
 
 // git add .
