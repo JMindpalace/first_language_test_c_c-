@@ -2,11 +2,11 @@
 #include <stdio.h>
 int main()
 {
-	// 1164 : 3개 조건 통과
-	int a, b, c;
-	scanf("%d %d %d", &a, &b, &c);
-	if (a<=170 || b<=170 || c<=170 ) { printf("CRASH"); }
-	else { printf("PASS"); }
+	// 1165 : 마지막 빼기!
+	int a, b;
+	scanf("%d %d", &a, &b);
+	printf("%d", ((89-a)/5)+1+b);
+	// 마지막 90을 제외하는 건 (90-a%5) !=0  a++
 	
 	return 0;
 }
