@@ -2,12 +2,22 @@
 #include <stdio.h>
 int main()
 {
-	// 1158 : 정수 30이상 40이하 & 60이상 70이하
+	// 1160 : 일주일 중 아르바이트 날 구하기
 	int a;
 	scanf("%d", &a);
 
-	if ( (a>=50 && a<=70) || (a%6 == 0) ) { printf("win"); }
-	else { printf("lose"); }
+	switch (a) {
+	case 1:
+	case 3:
+	case 5:
+		case 7:
+		printf("oh my god");
+		break;
+	case 2:
+	case 4:
+	case 6:
+		printf("enjoy");
+	}
 	return 0;
 }
 
