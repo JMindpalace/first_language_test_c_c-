@@ -2,11 +2,14 @@
 #include <stdio.h>
 int main()
 {
-	// 1165 : 마지막 빼기!
-	int a, b;
-	scanf("%d %d", &a, &b);
-	printf("%d", ((89-a)/5)+1+b);
-	// 마지막 90을 제외하는 건 (90-a%5) !=0  a++
+	// 1222 : 마지막 빼기 조건 추가
+	int time, ac, bc, re;
+	scanf("%d %d %d", &time, &ac, &bc);
+	re = ((89 - time) / 5) + 1 + ac;
+
+	if (re > bc) { printf("win"); }
+	else if (re == bc) { printf("same"); }
+	else { printf("lose"); }
 	
 	return 0;
 }
