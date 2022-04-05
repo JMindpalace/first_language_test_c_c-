@@ -2,14 +2,13 @@
 #include <stdio.h>
 int main()
 {
-	// 1222 : 마지막 빼기 조건 추가
-	int time, ac, bc, re;
-	scanf("%d %d %d", &time, &ac, &bc);
-	re = ((89 - time) / 5) + 1 + ac;
-
-	if (re > bc) { printf("win"); }
-	else if (re == bc) { printf("same"); }
-	else { printf("lose"); }
+	// 1230 : 처음 충돌 터널 찾기
+	int a, b, c;
+	scanf("%d %d %d", &a, &b, &c);
+	if (a<=170) { printf("CRASH %d", a); }
+	else if (b<=170) { printf("CRASH %d", b); }
+	else if (c<=170) { printf("CRASH %d", c); }
+	else { printf("PASS"); }
 	
 	return 0;
 }
