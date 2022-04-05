@@ -2,22 +2,19 @@
 #include <stdio.h>
 int main()
 {
-	// 1160 : 일주일 중 아르바이트 날 구하기
-	int a;
-	scanf("%d", &a);
+	// 1161 : 결과를 홀수 짝수로 출력
+	int a, b;
+	scanf("%d %d", &a, &b);
 
-	switch (a) {
-	case 1:
-	case 3:
-	case 5:
-		case 7:
-		printf("oh my god");
-		break;
-	case 2:
-	case 4:
-	case 6:
-		printf("enjoy");
-	}
+	if(a%2==0){ printf("짝수+"); }
+	else { printf("홀수+"); }
+
+	if(b%2==0){ printf("짝수="); }
+	else { printf("홀수="); }
+
+	if((a+b)%2==0){ printf("짝수"); }
+	else { printf("홀수"); }
+	
 	return 0;
 }
 
