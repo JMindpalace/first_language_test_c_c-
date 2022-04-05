@@ -5,10 +5,18 @@ int main()
 	// 1230 : 처음 충돌 터널 찾기
 	int a, b, c;
 	scanf("%d %d %d", &a, &b, &c);
-	if (a<=170) { printf("CRASH %d", a); }
-	else if (b<=170) { printf("CRASH %d", b); }
-	else if (c<=170) { printf("CRASH %d", c); }
-	else { printf("PASS"); }
+	if (a<=b && a<=c) {
+		if(b<=c) printf("%d %d %d", a, b, c);
+		else printf("%d %d %d", a, c, b);
+	}
+	else if (b<=a && b<=c) {
+		if(a<=c) printf("%d %d %d", b, a, c);
+		else printf("%d %d %d", b, c, a);
+	}
+	else {
+		if(a<=b) printf("%d %d %d", c, a, b);
+		else printf("%d %d %d", c, b, a);
+	}
 	
 	return 0;
 }
