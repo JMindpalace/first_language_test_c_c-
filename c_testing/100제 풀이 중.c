@@ -2,11 +2,11 @@
 #include <stdio.h>
 int main()
 {
-	// 1153 : 두 수의 대소 비교
+	// 1154 : 큰수 - 작은수
 	int a, b;
 	scanf("%d %d", &a, &b);
-	if(a<10){ printf("small");}
-	else { printf("big");}
+	if(a>=b){ printf("%d", a-b);}
+	else { printf("%d", b-a);}
 	return 0;
 }
 // (i%10 == 3 || i % 10 == 6 || i % 10 == 9)  - 일의자리 3,6,9
