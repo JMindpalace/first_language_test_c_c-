@@ -2,21 +2,18 @@
 #include <stdio.h>
 int main()
 {
-	// 1228 : 비만도 측정 1 -- 표준몸무게 도입
-	float a, b, c, d;
-	scanf("%f %f", &a, &b);
-	d = (a - 100)*0.9;
+	// 1229 : 비만도 측정 2 -- 추가로 키 계산 도입
+	double a, b, c, d;
+	scanf("%lf %lf", &a, &b);
+	if (a < 150) { d = a - 100; }
+	else if (a < 160) { d = (a - 150)/2 +50; }
+	else { d = (a - 100)*0.9; }
+	
 	c = ((b - d) * 100)/d;
 	
-	if (c <= 10.09) {
-		printf("정상");
-	}
-	else if (c <= 20) {
-		printf("과체중");
-	}
-	else {
-		printf("비만");
-	}
+	if (c <= 10.09) { printf("정상"); }
+	else if (c <= 20) { printf("과체중"); }
+	else { printf("비만"); }
 	return 0;
 }
 
