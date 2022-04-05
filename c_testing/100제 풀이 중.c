@@ -2,9 +2,9 @@
 #include <stdio.h>
 int main()
 {
-	// 1151 10보다 작은 수만 small 출력, 이상은 big 출력
-	int a;
-	scanf("%d", &a);
+	// 1153 : 두 수의 대소 비교
+	int a, b;
+	scanf("%d %d", &a, &b);
 	if(a<10){ printf("small");}
 	else { printf("big");}
 	return 0;
