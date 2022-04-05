@@ -135,6 +135,12 @@
 	// for (int i = 1; i <= 10; i++) { for (int j = 1; j <= 10; j++) { scanf("%d", &arr[i][j]); } }
 	// for (int i = 2, j = 1; out!=1; ) { if (arr[i][j + 1] == 0) j++; else i++; if (arr[i][j] == 2) { arr[i][j] = 9; out++; } arr[i][j] = 9; }
 
+/* 비만도 측정 */  // double a, b, c, d; scanf("%lf %lf", &a, &b);
+	// 공통 출력 - if(a <= 10){ printf("정상"); } else if(a <= 20){ printf("과체중"); } else{ printf("비만"); }
+	// 기본 공식 대입 - d = (a - 100)*0.9; c = ((b - d) * 100)/d;
+	// 키 추가 대입 - if (a < 150) { d = a - 100; } else if (a < 160) { d = (a - 150)/2 +50; } else { d = (a - 100)*0.9; }
+
+
 // git add .
 // git commit -m "history"
 // git push origin master
