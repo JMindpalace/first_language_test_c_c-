@@ -2,11 +2,11 @@
 #include <stdio.h>
 int main()
 {
-	// 1157 : 실수 50이상 60이하
+	// 1158 : 정수 30이상 40이하 & 60이상 70이하
 	int a;
 	scanf("%d", &a);
 
-	if (a>50 && a<60) { printf("win"); }
+	if ( (a>=30 && a<=40) || (a>=60 && a<=70) ) { printf("win"); }
 	else { printf("lose"); }
 	return 0;
 }
