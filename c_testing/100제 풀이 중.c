@@ -2,18 +2,12 @@
 #include <stdio.h>
 int main()
 {
-	// 1161 : 결과를 홀수 짝수로 출력
-	int a, b;
-	scanf("%d %d", &a, &b);
-
-	if(a%2==0){ printf("짝수+"); }
-	else { printf("홀수+"); }
-
-	if(b%2==0){ printf("짝수="); }
-	else { printf("홀수="); }
-
-	if((a+b)%2==0){ printf("짝수"); }
-	else { printf("홀수"); }
+	// 1162 : 1의 자리 구하기
+	int a, b, c, result;
+	scanf("%d %d %d", &a, &b, &c);
+	result = (a - b + c)%10;
+	if (result == 0) { printf("대박"); }
+	else { printf("그럭저럭"); }
 	
 	return 0;
 }
