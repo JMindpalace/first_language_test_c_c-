@@ -2,12 +2,12 @@
 #include <stdio.h>
 int main()
 {
-	// 1156 : 홀수(odd) / 짝수(even)
+	// 1157 : 실수 50이상 60이하
 	int a;
 	scanf("%d", &a);
 
-	if (a%2 == 0) { printf("even"); }
-	else { printf("odd"); }
+	if (a>50 && a<60) { printf("win"); }
+	else { printf("lose"); }
 	return 0;
 }
 
