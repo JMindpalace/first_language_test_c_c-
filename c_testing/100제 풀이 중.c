@@ -2,12 +2,12 @@
 #include <stdio.h>
 int main()
 {
-	// 1155 - 7의 배수 찾기 배수면 multiple 아니면 not 추가
+	// 1156 : 홀수(odd) / 짝수(even)
 	int a;
 	scanf("%d", &a);
 
-	if (a%7 == 0) { printf("multiple"); }
-	else { printf("not multiple"); }
+	if (a%2 == 0) { printf("even"); }
+	else { printf("odd"); }
 	return 0;
 }
 
