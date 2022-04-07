@@ -3,20 +3,13 @@
 int main()
 {
 	// 1167 : 두 번째 수
-	int a, b, c;
-	scanf("%d %d %d", &a, &b, &c);
-
-	if (a >= b && a >= c) { // a>b>c // c>b>a
-		if (b >= c) { printf("%d", b); }
-		else { printf("%d", c); }
-	}
-	else if (a <= b && c >= a) { // a>c>b // b>c>a
-		if (b <= c) { printf("%d", b); }
-		else { printf("%d", c); }
-	}
-	else { // b>a>c c>a>b
-		printf("%d", a);
-	}
+	int year, gender;
+	scanf("%d %d", &year, &gender);
+	year = year / 10000;
+	if (year >= 10) { year = 100 - year + 13; }
+	else { year = 13 - year; }
+	printf("%d", year);
+	
 	return 0;
 }
 
