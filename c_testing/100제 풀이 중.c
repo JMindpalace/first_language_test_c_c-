@@ -2,17 +2,28 @@
 #include <stdio.h>
 int main()
 {
-	// 1204 : 배수(multiple) 표현
-	int m , b;
-	scanf("%d %d", &m, &b);
-	
-	if(m%b==0){ // b√m
-		printf("%d*%d=%d", b, m/b, m);
+	// 1207 : 윷놀이
+	int du, ga, gal, yu, sum;
+	scanf("%d %d %d %d", &du, &ga, &gal, &yu);
+	sum = du+ga+gal+yu;
+
+	switch (sum){
+		case 0:
+			printf("모");
+			break;
+		case 1:
+			printf("도");
+			break;
+		case 2:
+			printf("개");
+			break;
+		case 3:
+			printf("걸");
+			break;
+		case 4:
+			printf("윷");
+			break;
 	}
-	else if(b%m==0){
-		printf("%d*%d=%d", m, b/m, b);
-	}
-	else{ printf("none"); }
 
 	return 0;
 }
