@@ -2,20 +2,15 @@
 #include <stdio.h>
 int main()
 {
-	// 1171 : 학년 반 번호 -- 조건 분기 -- a&b c || a&b&c
+	// 1174 : 30분전 (if문 없이)
 	int h, m;
 	scanf("%d %d", &h, &m);
-
-	m = m-30; // t = (t*60 +m) -30;
 	
-	if(m<0){
-		if(h==0) {
-			if(m>-29) { printf("23 %d", 60+m); }
-			else { printf("0 %d", 60+m); }
-		}
-		else printf("%d %d", h-1, 60+m);
-	}
-	else{ printf("%d %d", h, m);}
+	h += 24;
+	m=(m + h * 60) -30;
+
+	printf("%d %d", (m/60)%24, m%60);
+
 
 	return 0;
 }
