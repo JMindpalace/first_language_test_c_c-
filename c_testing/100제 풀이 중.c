@@ -1,16 +1,21 @@
-#define _CRT_SECURE_NO_WARNINGS // 가치 반복 하기
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 int main()
 {
-	// 1166 : 윤년 판별
-	int year;
-	scanf("%d", &year);
-	
-	if ((year%4==0 && year%100!=0)||year%400==0) {
-		printf("yes");
+	// 1167 : 두 번째 수
+	int a, b, c;
+	scanf("%d %d %d", &a, &b, &c);
+
+	if (a >= b && a >= c) { // a>b>c // c>b>a
+		if (b >= c) { printf("%d", b); }
+		else { printf("%d", c); }
 	}
-	else {
-		printf("no");
+	else if (a <= b && c >= a) { // a>c>b // b>c>a
+		if (b <= c) { printf("%d", b); }
+		else { printf("%d", c); }
+	}
+	else { // b>a>c c>a>b
+		printf("%d", a);
 	}
 	return 0;
 }
