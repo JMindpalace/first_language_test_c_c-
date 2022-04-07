@@ -2,13 +2,20 @@
 #include <stdio.h>
 int main()
 {
-	// 1170 : 학년 반 번호 -- %[]d []에 -숫자면 좌측 +숫자면 우측 정렬
+	// 1171 : 학년 반 번호 -- 조건 분기 -- a&b c || a&b&c
 	int grade, class, num;
 	scanf("%d %d %d", &grade, &class, &num);
-	if(num<10)
-		printf("%d%d0%d", grade, class, num);
-	else
-		printf("%d%d%d", grade, class, num);
+
+	if (class > 10) {
+		if(num < 10) { printf("%d%d00%d", grade, class, num); }
+		else if (num > 100) { printf("%d%d%d", grade, class, num); }
+		else { printf("%d%d0%d", grade, class, num); }
+	}
+	else {
+		if (num < 10) { printf("%d0%d00%d", grade, class, num); }
+		else if (num > 100) { printf("%d0%d%d", grade, class, num); }
+		else { printf("%d0%d0%d", grade, class, num); }
+	}
 	
 	return 0;
 }
@@ -16,3 +23,4 @@ int main()
 // git add .
 // git commit -m "
 // git push origin master
+
