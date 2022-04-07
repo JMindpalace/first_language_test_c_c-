@@ -2,28 +2,28 @@
 #include <stdio.h>
 int main()
 {
-	// 1207 : 윷놀이
-	int du, ga, gal, yu, sum;
-	scanf("%d %d %d %d", &du, &ga, &gal, &yu);
-	sum = du+ga+gal+yu;
-
-	switch (sum){
-		case 0:
-			printf("모");
-			break;
-		case 1:
-			printf("도");
-			break;
-		case 2:
-			printf("개");
-			break;
-		case 3:
-			printf("걸");
-			break;
-		case 4:
-			printf("윷");
-			break;
+	// 1210 : 칼로리 계산
+	int a, b, sum=0;
+	scanf("%d %d", &a, &b);
+	
+	switch (a){
+		case 1: {sum+=400; break;}
+		case 2: {sum+=340; break;}
+		case 3: {sum+=170; break;}
+		case 4: {sum+=100; break;}
+		case 5: {sum+=70; break;}
 	}
+
+	switch (b){
+		case 1: {sum+=400; break;}
+		case 2: {sum+=340; break;}
+		case 3: {sum+=170; break;}
+		case 4: {sum+=100; break;}
+		case 5: {sum+=70; break;}
+	}
+
+	if(sum>500) printf("angry");
+	else printf("no angry");
 
 	return 0;
 }
