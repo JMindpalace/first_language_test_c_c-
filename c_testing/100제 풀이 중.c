@@ -2,12 +2,13 @@
 #include <stdio.h>
 int main()
 {
-	// 1169 : 나이로 연도와 성별 계산
-	int age, year=2013;
-	scanf("%d", &age);
-	year = year-age;
-	if(year<2000){ printf("%d 1", year%100); }
-	else{ printf("%d 3", year%100); }
+	// 1170 : 학년 반 번호 -- %[]d []에 -숫자면 좌측 +숫자면 우측 정렬
+	int grade, class, num;
+	scanf("%d %d %d", &grade, &class, &num);
+	if(num<10)
+		printf("%d%d0%d", grade, class, num);
+	else
+		printf("%d%d%d", grade, class, num);
 	
 	return 0;
 }
