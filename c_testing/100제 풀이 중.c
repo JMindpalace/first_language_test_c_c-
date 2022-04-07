@@ -2,23 +2,17 @@
 #include <stdio.h>
 int main()
 {
-	// 1201 : trillionth
-	int t;
-	scanf("%d", &t);
+	// 1204 : 배수(multiple) 표현
+	int m , b;
+	scanf("%d %d", &m, &b);
 	
-	if(t%10==1){
-		if(t==11) printf("%dth", t);
-		else printf("%dst", t);
+	if(m%b==0){ // b√m
+		printf("%d*%d=%d", b, m/b, m);
 	}
-	else if(t%10==2){
-		if(t==12) printf("%dth", t);
-		else printf("%dnd", t);
+	else if(b%m==0){
+		printf("%d*%d=%d", m, b/m, b);
 	}
-	else if(t%10==3){
-		if(t==13) printf("%dth", t);
-		else printf("%drd", t);
-	}
-	else{ printf("%dth", t); }
+	else{ printf("none"); }
 
 	return 0;
 }
