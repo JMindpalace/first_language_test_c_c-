@@ -2,13 +2,12 @@
 #include <stdio.h>
 int main()
 {
-	// 1167 : 두 번째 수
-	int year, gender;
-	scanf("%d %d", &year, &gender);
-	year = year / 10000;
-	if (year >= 10) { year = 100 - year + 13; }
-	else { year = 13 - year; }
-	printf("%d", year);
+	// 1169 : 나이로 연도와 성별 계산
+	int age, year=2013;
+	scanf("%d", &age);
+	year = year-age;
+	if(year<2000){ printf("%d 1", year%100); }
+	else{ printf("%d 3", year%100); }
 	
 	return 0;
 }
