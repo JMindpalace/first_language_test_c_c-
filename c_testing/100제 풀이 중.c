@@ -2,17 +2,25 @@
 #include <stdio.h>
 int main()
 {
-	// 1260 : 3의 배수의 합 - 차후에 별도 함수 생성
-	int a, b, sum=0;
-	scanf("%d %d", &a, &b);
-
-	for (int i=a; i<=b; i++){
-		if(i%3==0){
-			sum += i;
-		}	
+	//1261 : 10개의 수 중 5의 배수를 하나만 출력 - 차후에 별도 함수 생성
+	int a[10], check=0;
+	
+	for (int i=0; i<10; i++){
+		scanf("%d", &a[i]);
+		if(a[i]%5 == 0) check ++;
 	}
 	
-	printf("%d", sum);
+	if(check==0){
+		printf("0");
+	}
+	else{
+		for (int i=0; i<10; i++){
+			if(a[i]%5 == 0) {
+				printf("%d", a[i]);
+				break;
+			}
+		}
+	}
 
 	return 0;
 }
