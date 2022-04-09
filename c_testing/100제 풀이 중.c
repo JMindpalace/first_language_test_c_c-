@@ -2,18 +2,13 @@
 #include <stdio.h>
 int main()
 {
-	// 1253 : a~b 출력 - 차후에 별도 함수 생성
-	double a, b;
-	scanf("%lf %lf", &a, &b);
-	
-	if(a>b){
-		for(int i=b; i<=a; i+=0.01)
-			printf("%.2f ", i);
-	}
-	else{
-		for(int i=a; i<=b; i++)
-			printf("%.2f ", i);
-	}
+	// 1257 : 두 수 사이의 홀수 출력 - 차후에 별도 함수 생성
+	int a, b;
+	scanf("%d %d", &a, &b);
+
+	if(a%2==0) a++;
+	for (int i=a; i<=b; i+=2)
+			printf("%d", i);
 
 	return 0;
 }
