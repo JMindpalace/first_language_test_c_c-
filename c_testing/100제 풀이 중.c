@@ -2,12 +2,15 @@
 #include <stdio.h>
 int main()
 {
-	// 1258 : 1부터 n까지 합 구하기 - 차후에 별도 함수 생성
-	int n, sum=0;
-	scanf("%d", &n);
+	// 1260 : 3의 배수의 합 - 차후에 별도 함수 생성
+	int a, b, sum=0;
+	scanf("%d %d", &a, &b);
 
-	for (int i=0; i<=n; i+=2)
-		sum += i;
+	for (int i=a; i<=b; i++){
+		if(i%3==0){
+			sum += i;
+		}	
+	}
 	
 	printf("%d", sum);
 
