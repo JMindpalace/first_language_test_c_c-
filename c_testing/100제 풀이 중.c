@@ -2,16 +2,9 @@
 #include <stdio.h>
 int main()
 {
-	//1231 : 간단 계산기
-	int a, b; char c;
-	scanf("%d%c%d", &a, &c, &b);
-
-	switch (c){
-		case '+':{ printf("%d", a+b); break; }
-		case '-':{ printf("%d", a-b); break; }
-		case '*':{ printf("%d", a*b); break; }
-		case '/':{ printf("%.2f", (float)a/b); break; }
-	}
+	// 1251 : 1~100출력 - 차후에 별도 함수 생성
+	for(int i=1; i<101; i++)
+		printf("%d ", i);
 
 	return 0;
 }
