@@ -3,15 +3,23 @@
 int main()
 {
 	// 1226 : 로또 프로그램
-	int a=10, b=20;
-	int *ptr;
+	int arr[10][10], n, m, sum = 0;
 
-	ptr=&a; *ptr=30;
-	ptr=&b; *ptr=10;
+	scanf("%d %d", &n, &m);
 
-	printf("%d\n", a); // 30
-	printf("%d\n", b); // 10
-	printf("%d\n", *ptr); // 10
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			scanf("%d", &arr[i][j]);
+		}
+	}
+
+	for (int i = 0; i < n; i++) {
+		sum = 0;
+		for (int j = 0; j < m; j++) {
+			sum += arr[i][j];
+		}
+		printf("%d\n", sum);
+	}
 
 	return 0;
 }
