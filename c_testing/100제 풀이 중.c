@@ -2,14 +2,16 @@
 #include <stdio.h>
 int main()
 {
-	// 1268 : n개의 수 중 짝수의 개수 - 차후에 별도 함수 생성
-	int a, b, sum=0;
-	scanf("%d", &a);
+	// 1269 : 수열의 값 구하기 - 차후에 별도 함수 생성
+	int a, b, c, d, sum = 0;
+	scanf("%d %d %d %d", &a, &b, &c, &d);
 
-	for (int i=0; i<a; i++){
-		scanf("%d ", &b);
-		if(b%2==0) sum ++;
+	for (int i = 0; i < d; i++) {
+		if (i == 0) { sum += a; continue;  }
+		sum = a * b + c;
+		a = sum;
 	}
+	// for(sum += a, i=1; i<d; i++) { sum = s*b+c; }
 	printf("%d", sum);
 	
 	return 0;
