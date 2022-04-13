@@ -4,17 +4,16 @@
 
 int main()
 {
-	// 1287 : 구구단을 *로 출력하기 - 차후에 별도 함수 생성
-	int n;
-	scanf("%d", &n);
+	// 1286 : 최댓값, 최솟값 - 차후에 별도 함수 생성
+	int min=10000, max=-10000, a;
 
-	for (int i = 1; i < 10; i++) {
-		for (int j = 1; j < (i*n)+1; j++) {
-			printf("*");
-		}
-		printf("\n");
+	for (int i = 0; i < 5; i++) {
+		scanf("%d", &a);
+		if(a>max){ max = a; }
+		if(a<min){ min = a; }
 	}
 
+	printf("%d\n%d", max, min);
 	return 0;
 }
 
