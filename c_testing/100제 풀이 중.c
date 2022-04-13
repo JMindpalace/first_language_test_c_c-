@@ -2,24 +2,15 @@
 #include <stdio.h>
 int main()
 {
-	// 1280 : 홀수는 더하고 짝수는 빼고 2 - 차후에 별도 함수 생성
-	int a, b, sum=0, max=0, min=0;
-	scanf("%d %d", &a, &b);
-	
-	if(a>b){ max=a; min=b; }
-	else{ max=b; min=a; } 
+	// 1281 : 홀수는 더하고 짝수는 빼고 3 - 차후에 별도 함수 생성
+	int a, dit=0; // dit 대신 i로 대체 or 문자로 받아서 -> strlen(str)출력
+	scanf("%d", &a);
 
-	for (int i=min; i <= max; i++) {
-		if(i==min){
-			if(i%2==0) {sum -= i; printf("%d", i); }
-			else { sum += i; printf("%d", i);}
-		}
-		else{
-			if(i%2==0) {sum -= i; printf("-%d", i); }
-			else { sum += i; printf("+%d", i);}
-		}
+	for (int i = 0; a > 0; i++) {
+		a = a/10;
+		dit++;
 	}
-	printf("=%d", sum);
+	printf("%d", dit);
 
 	return 0;
 }
