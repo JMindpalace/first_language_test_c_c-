@@ -4,13 +4,15 @@
 
 int main()
 {
-	// 1353 : 삼각형 출력하기 1  - 차후에 별도 함수 생성
+	//1354 : 삼각형 출력하기 2  - 차후에 별도 함수 생성
 	int n;
 	scanf("%d", &n);
-	
-	for(int i=1; i<=n; i++){
-		for(int j=0; j<i; j++) {
-			printf("*");}
+
+	for (int i = n; i > 0; i--) {
+		for (int j = 0; j < i; j++) {
+			printf("*");
+		}
+		printf("\n");
 	}
 
 	return 0;
