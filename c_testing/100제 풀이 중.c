@@ -5,15 +5,14 @@
 int main()
 {
 	// 1286 : 최댓값, 최솟값 - 차후에 별도 함수 생성
-	int min=10000, max=-10000, a;
+	int a, b;
+	scanf("%d %d", &a, &b);
 
-	for (int i = 0; i < 5; i++) {
-		scanf("%d", &a);
-		if(a>max){ max = a; }
-		if(a<min){ min = a; }
+	for (int i=a; i<=b; i++){
+		for(int j=1; j<10; j++){
+			printf("%d*%d=%d\n", a,j,a*j);
+		}
 	}
-
-	printf("%d\n%d", max, min);
 	return 0;
 }
 
