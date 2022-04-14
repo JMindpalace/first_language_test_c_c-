@@ -4,13 +4,18 @@
 
 int main()
 {
-	// 1360 : 숫자 피라미드 2   - 차후에 별도 함수 생성
-	int n;
+	// 1362 : 숫자 피라미드 3   - 차후에 별도 함수 생성
+	int n, cou=0;
 	scanf("%d", &n);
 
 	for (int i = n; i > 0; i--) {
 		for (int j = i; j > 0; j--) {
-			printf("%d ", i);
+			cou++;
+		} } // v = n*(n+1)/2;
+	
+	for (int i = n-1; i >= 0; i--) {
+		for (int j = 0; j < n-i; j++) {
+			printf("%d ", cou--);
 		}
 		printf("\n");
 	}
