@@ -7,24 +7,14 @@ int main()
 	// 1356 : 사각형 출력하기 2  - 차후에 별도 함수 생성
 	int n;
 	scanf("%d", &n);
-	// i == 0 || i == n - 1 || j == 0 || j == n - 1
-	for (int i = 0; i < n; i++) {
-		if (i == 0 || i == n - 1) {
-			for (int j = 0; j < n; j++) {
-				printf("*");
-			}
+	for(int i=0; i<n; i++) { printf("*");} printf("\n");
 
-		}
-		else {
-			for (int j = 0; j < n; j++) {
-				if (j == 0 || j == n - 1)
-					printf("*");
-				else
-					printf(" ");
-			}
-		}
-		printf("\n");
-	}
+	for(int i=0; i<n; i++) { 
+		if(i==0 || i==n-1)
+			{printf("*");}
+	} 
+
+	for(int i=0; i<n; i++) { printf("*");} printf("\n");
 	return 0;
 }
 
