@@ -4,19 +4,13 @@
 
 int main()
 {
-	// 1357 : 삼각형 출력하기 4   - 차후에 별도 함수 생성
+	// 1359 : 숫자 피라미드 1   - 차후에 별도 함수 생성
 	int n;
 	scanf("%d", &n);
 
 	for (int i = 1; i <= n; i++) {
-		for (int j = 0; j < i; j++) {
-			printf("*");
-		}
-		printf("\n");
-	}
-	for (int i = n-1; i > 0; i--) {
-		for (int j = 0; j < i; j++) {
-			printf("*");
+		for (int j = 1; j < i+1; j++) {
+			printf("%d ", j);
 		}
 		printf("\n");
 	}
