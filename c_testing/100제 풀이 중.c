@@ -4,13 +4,13 @@
 
 int main()
 {
-	// 1359 : 숫자 피라미드 1   - 차후에 별도 함수 생성
+	// 1360 : 숫자 피라미드 2   - 차후에 별도 함수 생성
 	int n;
 	scanf("%d", &n);
 
-	for (int i = 1; i <= n; i++) {
-		for (int j = 1; j < i+1; j++) {
-			printf("%d ", j);
+	for (int i = n; i > 0; i--) {
+		for (int j = i; j > 0; j--) {
+			printf("%d ", i);
 		}
 		printf("\n");
 	}
