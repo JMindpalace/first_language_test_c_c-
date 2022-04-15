@@ -4,23 +4,26 @@
 
 int main()
 {
-	// 1368 : 평행사변형 출력하기 2  - 차후에 별도 함수 생성
-	int n, s_c; char a;
-	scanf("%d %d %c", &n, &s_c, &a);
+	// 1369 : 빗금 친 사각형 출력하기 - 생각 중
+	int n, k;
+	scanf("%d %d", &n, &k);
 
-	for (int i = 0; i < n; i++) {
-		if (a == 'L') {
-			for (int j = 0; j < i; j++)
-			{ printf(" "); }
+	for (int i = 0; i < n; i++) { printf("*"); } printf("\n");
+
+	for (int i = 1; i < n-1; i++) {
+		for (int j=1; j <= n; j++) { // k k*2 k*3 < n
+			if (j == 1 || j==n || j==k-1) {
+				printf("*");
+			}
+			else {
+				printf(" ");
+			}
+			k--;
 		}
-		else { // R
-			for (int j = n; j > i; j--)
-			{ printf(" "); }
-		}
-		for (int j = 0; j < s_c; j++)
-		{ printf("*"); }
-		printf("\n");
+		printf(" %d \n", i);
 	}
+
+	for (int i = 0; i < n; i++) { printf("*"); } printf("\n");
 
 	return 0;
 }
