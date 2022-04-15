@@ -4,17 +4,21 @@
 
 int main()
 {
-	// 1367 : 평행사변형 출력하기 1 - 차후에 별도 함수 생성
-	int n, cou = 0;
-	scanf("%d", &n);
+	// 1368 : 평행사변형 출력하기 2  - 차후에 별도 함수 생성
+	int n, s_c; char a;
+	scanf("%d %d %c", &n, &s_c, &a);
 
-	for (int i = 1; i <= n; i++) {
-		for (int j = n; j > i; j--)
-		{ printf(" "); }
-		
-		for (int j = 0; j<n; j++)
+	for (int i = 0; i < n; i++) {
+		if (a == 'L') {
+			for (int j = 0; j < i; j++)
+			{ printf(" "); }
+		}
+		else { // R
+			for (int j = n; j > i; j--)
+			{ printf(" "); }
+		}
+		for (int j = 0; j < s_c; j++)
 		{ printf("*"); }
-		
 		printf("\n");
 	}
 
