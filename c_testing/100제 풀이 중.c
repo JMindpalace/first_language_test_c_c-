@@ -4,14 +4,18 @@
 
 int main()
 {
-	// 1361 : 별 계단 만들기 - 차후에 별도 함수 생성
-	int n, cou=0;
+	// 1367 : 평행사변형 출력하기 1 - 차후에 별도 함수 생성
+	int n, cou = 0;
 	scanf("%d", &n);
 
-	for (int i = 0; i < n ; i++) {
-		for (int j = 0; j < i; j++)
+	for (int i = 1; i <= n; i++) {
+		for (int j = n; j > i; j--)
 		{ printf(" "); }
-		printf("**\n");
+		
+		for (int j = 0; j<n; j++)
+		{ printf("*"); }
+		
+		printf("\n");
 	}
 
 	return 0;
