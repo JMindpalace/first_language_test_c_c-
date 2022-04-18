@@ -2,30 +2,20 @@
 #include <stdio.h>
 #include <math.h>
 
-int main()
+int main() // 1295 : 알파벳 대소문자 변환
 {
-	// 1369 : 빗금 친 사각형 출력하기 - 생각 중
-	int n;
-	scanf("%d", &n);
-	for (int i = 0; i < n; i++) {
-		for (int j = 0; j <= n+i; j++) { // n-i == " "
-			if (j == n+i || j == n-i-1) { // (i-1)*2 == " "
-				printf("*"); }
-			else {
-				printf(" "); }
-		}
-		printf("\n");
-	}
-	for (int i = n; i > 0; i--) {
-		for (int j = 0; j < n+i; j++) {
-			if (j == n+i-1 || j == n-i) {
-				printf("*"); }
-			else { 
-				printf(" "); }
-		}
-		printf("\n");
-	}
+	char a[1000] = "";
+	scanf("%s", a);
 
+	for (int i = 0; a[i] != '\0'; i++) {
+		if (a[i] >= 65 && a[i] <= 90) {
+			a[i] = a[i] + 32;
+		}
+		else if (a[i] >= 97 && a[i] <= 122) {
+			a[i] = a[i] - 32;
+		}
+	}
+	printf("%s", a);
 
 	return 0;
 }
