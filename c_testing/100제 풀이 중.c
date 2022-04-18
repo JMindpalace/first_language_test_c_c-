@@ -2,20 +2,20 @@
 #include <stdio.h>
 #include <math.h>
 
-int main() // 1403 : 배열 두번 출력하기
+int main() // 1406 : love 
 {
-	int n, a[100];
-	scanf("%d", &n);
-
-	for (int i = 0; i < n; i++) {
-		scanf("%d", &a[i]);
-	}
-
-	for(int i=0; i<2; i++){
-		for (int i = 0; i < n; i++) {
-			printf("%d\n", a[i]);
+	char a[51], cou=0;
+	scanf("%s", &a);
+	
+	// if (s[0]=='l' && s[1]=='o' && s[2]=='v' && s[3]=='e' && s[4]=='\0')
+	for (int i = 0; i < sizeof(a); i++) {
+		if (a[i] == 'l' || a[i] == 'o' || a[i] == 'v' || a[i] == 'e') {
+			cou++;
 		}
 	}
+
+	if(cou==4)
+		printf("I love you.");
 	
 
 	return 0;
