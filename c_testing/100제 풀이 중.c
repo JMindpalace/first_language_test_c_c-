@@ -4,19 +4,18 @@
 
 int main() // 1406 : love 
 {
-	char a[51], cou=0;
-	scanf("%s", &a);
-	
-	// if (s[0]=='l' && s[1]=='o' && s[2]=='v' && s[3]=='e' && s[4]=='\0')
-	for (int i = 0; i < sizeof(a); i++) {
-		if (a[i] == 'l' || a[i] == 'o' || a[i] == 'v' || a[i] == 'e') {
-			cou++;
-		}
+	int n, sum = 0;
+	scanf("%d", &n);
+
+	// scanf("%1d", &a);
+	for (int i = 0; i < 10; i++)
+	{
+		sum += n%10;
+		n = n / 10;
 	}
 
-	if(cou==4)
-		printf("I love you.");
-	
+	if (sum % 7 == 4) { printf("suspect"); }
+	else { printf("citizen"); }
 
 	return 0;
 }
