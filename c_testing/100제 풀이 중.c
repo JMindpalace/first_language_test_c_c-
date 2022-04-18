@@ -2,20 +2,18 @@
 #include <stdio.h>
 #include <math.h>
 
-int main() // 1295 : 알파벳 대소문자 변환
+int main() // 1402 : 거꾸로 출력하기 3
 {
-	char a[1000] = "";
-	scanf("%s", a);
+	int n, a[1000];
+	scanf("%d", &n);
 
-	for (int i = 0; a[i] != '\0'; i++) {
-		if (a[i] >= 65 && a[i] <= 90) {
-			a[i] = a[i] + 32;
-		}
-		else if (a[i] >= 97 && a[i] <= 122) {
-			a[i] = a[i] - 32;
-		}
+	for(int i=0; i<n; i++){
+		scanf("%d", &a[i]);
 	}
-	printf("%s", a);
+
+	for(int i=n-1; i>-1; i--){
+		printf("%d ", a[i]);
+	}
 
 	return 0;
 }
