@@ -2,20 +2,22 @@
 #include <stdio.h>
 #include <math.h>
 
-int main() // 1406 : love 
+int main() // 1205 : 최댓값
 {
-	int n, sum = 0;
-	scanf("%d", &n);
+	int a, b, min;
+	scanf("%d %d", &a, &b);
+	int sum = a + b, time = a * b;
+	double powf = pow(a, b), powb = pow(b, a), max = 0;
+	if (a > b) { min = a - b; }
+	else { min = b - a; }
 
-	// scanf("%1d", &a);
-	for (int i = 0; i < 10; i++)
-	{
-		sum += n%10;
-		n = n / 10;
-	}
+	if (sum > max) { max = sum; }
+	if (time > max) { max = time; }	
+	if (min > max) { max = min; }
+	if (powf > max) { max = powf; }
+	if (powb > max) { max = powb; }
 
-	if (sum % 7 == 4) { printf("suspect"); }
-	else { printf("citizen"); }
+	printf("%f", max);
 
 	return 0;
 }
