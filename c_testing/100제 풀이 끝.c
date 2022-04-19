@@ -25,7 +25,7 @@
 	// scanf("%d-%d", &a, &b); printf("%06d%07d", a, b); - 주민번호를 입력받아 지정 형식(13자리 숫자, -으로 앞뒤 구분)으로 출력
 	// char a[51]; scanf("%s", &a); printf("%s", a); - 단어 1개 입력받아 출력
 	// char conte[2001]; fgets(conte,2000,stdin); printf("%s", conte); - 공백 문자가 포함된 1개 문장 입력받아 출력
-		// gets(conte); printf("%s", conte);  |  gets(conte); puts(conte);
+		// char conte[2001]; gets(conte); printf("%s", conte);  |  gets(conte); puts(conte);
 	// scanf("%d.%6d",&a,&b); printf("%d\n%d", a, b); - 실수 1개 입력받아 정수부와 실수부로 출력
 		// scanf("%lf", &z); a = z/1; z1 = z-a; printf("%d\n%0.6f", a, z1);  |  #math의 modf()
 	// char a[21]; scanf("%s", &a); for(int i=0; a[i]!='\0'; i++) printf("\'%c\' \n", a[i]); - 단어 1개 입력받아 1줄에 1단어 출력

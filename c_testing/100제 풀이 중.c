@@ -2,21 +2,18 @@
 #include <stdio.h>
 #include <math.h>
 
-int main() // 1293 : 1등과 꼴등
+int main() // 1380 : 두 주사위의 합
 {
-	int n, s, max, min;
+	int n;
 	scanf("%d", &n);
 
-	scanf("%d", &s);
-	max = s; min = s;
-
-	for (int i = 1; i < n; i++) {
-		scanf("%d", &s);
-		if (s > max) { max = s; }
-		if (s < min) { min = s; }
+	for(int i=1; i<7; i++){
+		for(int j=1; j<7; j++){
+			if(i+j==n){
+				printf("%d %d\n", i, j);
+			}
+		}
 	}
-
-	printf("%d %d", max, min);
 
 	return 0;
 }
