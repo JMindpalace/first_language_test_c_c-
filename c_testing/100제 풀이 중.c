@@ -2,29 +2,32 @@
 #include <stdio.h>
 #include <math.h>
 
-int main() // 1218 : 삼각형 판단하기
+int main() // 1214 : 이 달은 며칠까지 있을까?
 {
-	int a, b, c;
-	scanf("%d %d %d", &a, &b, &c);
-	double po = a*a + b*b;
-
-	if (a+b > c) {
-		if (a == b && b == c) {
-			printf("정삼각형");
+	int y, m;
+	scanf("%d %d", &y, &m);
+	// day[]={0,31,28,31,30,31,30,31,31,30,31,30,31};
+	switch (m) {
+	case 1:
+	case 3:
+	case 5:
+	case 7:
+	case 8:
+	case 10:
+	case 12:
+	{ printf("31"); break; }
+	case 4:
+	case 6:
+	case 9:
+	case 11:
+	{ printf("30"); break; }
+	case 2:
+		if (y % 400 == 0 || (y % 4 == 0 && y % 100 != 0)) {
+			printf("29"); break;
 		}
-		else if (a == b || b == c || a == c) {
-			printf("이등변삼각형");
-		}
-		else if (po == c*c) {
-			printf("직각삼각형");
-		}
-		else {
-			printf("삼각형");
-		}
+		else { printf("28"); }
 	}
-	else {
-		printf("삼각형아님");
-	}
+	// if ((y%4==0 && y%100!=0) || y%400==0) day[2]++; printf("%d ", day[m]);
 
 	return 0;
 }
