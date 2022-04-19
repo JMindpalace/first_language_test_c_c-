@@ -2,32 +2,21 @@
 #include <stdio.h>
 #include <math.h>
 
-int main() // 1270 : 1의 개수는
+int main() // 1293 : 1등과 꼴등
 {
-	float a,sa,b,y;
-	int x;
-    scanf("%f %f",&a,&b);
+	int n, s, max, min;
+	scanf("%d", &n);
 
-    sa=a;
-    for(x=0;x<b;x++)
-    {
-                    scanf("%f",&y);
-                    a*=(100+y)/100;
-    }
+	scanf("%d", &s);
+	max = s; min = s;
 
-    if(a-sa>=0.5||a-sa<=-0.5)
-    {
-                      printf("%.0f\n",a-sa);
-                      if(a-sa>0)
-                               printf("good");
-                      else
-                          printf("bad");
-    }
-    else
-    {
-        printf("0\n"); 
-        printf("same");
-    } 
+	for (int i = 1; i < n; i++) {
+		scanf("%d", &s);
+		if (s > max) { max = s; }
+		if (s < min) { min = s; }
+	}
+
+	printf("%d %d", max, min);
 
 	return 0;
 }
