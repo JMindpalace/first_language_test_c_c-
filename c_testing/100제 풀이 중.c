@@ -2,17 +2,25 @@
 #include <stdio.h>
 #include <math.h>
 
-int main() // 1380 : 두 주사위의 합
+int main() // 1440 : 비교
 {
-	int n;
-	scanf("%d", &n);
+	int n, a[1000];
+	scanf("%d", &n); // int a[n];
 
-	for(int i=1; i<7; i++){
-		for(int j=1; j<7; j++){
-			if(i+j==n){
-				printf("%d %d\n", i, j);
-			}
+	for (int i = 0; i < n; i++) {
+		scanf("%d", &a[i]);
+	}
+
+	for (int i = 0; i < n; i++) {
+		printf("%d: ", i+1);
+		for (int j = 0; j < n; j++) {
+			if (i==j) { continue; }
+
+			if (a[i] > a[j]) { printf("> "); }
+			else if (a[i] < a[j]) { printf("< "); }
+			else { printf("= "); }
 		}
+		printf("\n");
 	}
 
 	return 0;
