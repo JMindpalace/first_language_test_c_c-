@@ -2,29 +2,18 @@
 #include <stdio.h>
 #include <math.h>
 
-int main() // 4 // 1445 : 정렬된 두 배열 합치기
+int main() // 5 // 1460 : [기초-배열연습] 2차원 배열 순서대로 채우기 1-1
 {
-	int n, m, a[2000], temp;
-	scanf("%d %d", &n, &m);
+	int n, pr=1;
+	scanf("%d", &n);
 
 	for (int i = 0; i < n; i++) {
-		scanf("%d", &a[i]); }
-	for (int i = n; i < n+m; i++) {
-		scanf("%d", &a[i]); }
-
-	for (int i = 0; i < n+m; i++) {
-		for (int j = 0; j < n + m; j++) {
-			if (a[j] > a[j + 1])
-			{
-				temp = a[j];
-				a[j] = a[j + 1];
-				a[j + 1] = temp;
-			}
+		for (int j = 0; j < n; j++) {
+			printf("%d ", pr++);
 		}
+		printf("\n");
 	}
-	for (int i = 1; i <= n+m; i++) {
-		printf("%d ", a[i]);
-	}
+
 	return 0;
 }
 
