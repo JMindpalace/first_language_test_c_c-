@@ -2,25 +2,18 @@
 #include <stdio.h>
 #include <math.h>
 
-int usecnt[5] = { 0, 0, 0, 0, 0 };
-void useitem(int);
+void rec(int n) {
+	if (n == 0) return;
 
-int main() { // 3 // 함수 종합 - 2
-	useitem(4);
-	useitem(2);
-	useitem(1);
-	useitem(4);
-	useitem(0);
-	
-	for (int i = 0; i < 5; i++) {
-		printf("슬롯%d의 아이템을 %d번 썼습니다, \n", i, usecnt[i]);
-	}
-	
-	return 0;
+	printf("%d", n);
+	rec(n - 1);
+	printf("%d", n);
 }
 
-void useitem(int itemnum) {
-	usecnt[itemnum]++;
+int main() { // 4 // 함수 종합 - 3
+	rec(5);
+
+	return 0;
 }
 
 // git add .
