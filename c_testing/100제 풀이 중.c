@@ -2,20 +2,17 @@
 #include <stdio.h>
 #include <math.h>
 
-int main() // 10 // 502 Bad Gateway -- nginx/1.21.0
-{
-	int n, m, pr;
-	scanf("%d %d", &n, &m);
+int parity(int n) {
+	// return (n%2 +2) %2;
+	if (n % 2 == 0) { return 0; }
+	else { return 1; }
+}
 
-	for (int i = 0; i < n; i++) {
-			pr = (n*m)-i;
-		for (int j = 0; j < m; j++) {
-			printf("%d ", pr);
-			pr -=n;
-		}
-		printf("\n");
-	}
-
+int main() { // 10 // 100문 502 Bad Gateway -- nginx/1.21.0
+	printf("%d\n", parity(5));
+	printf("%d\n", parity(-3));
+	printf("%d\n", parity(6));
+	
 	return 0;
 }
 
