@@ -2,18 +2,25 @@
 #include <stdio.h>
 #include <math.h>
 
-int parity(int n) {
-	// return (n%2 +2) %2;
-	if (n % 2 == 0) { return 0; }
-	else { return 1; }
-}
+int usecnt[5] = { 0, 0, 0, 0, 0 };
+void useitem(int);
 
-int main() { // 10 // 100문 502 Bad Gateway -- nginx/1.21.0
-	printf("%d\n", parity(5));
-	printf("%d\n", parity(-3));
-	printf("%d\n", parity(6));
+int main() { // 3 // 함수 종합 - 2
+	useitem(4);
+	useitem(2);
+	useitem(1);
+	useitem(4);
+	useitem(0);
+	
+	for (int i = 0; i < 5; i++) {
+		printf("슬롯%d의 아이템을 %d번 썼습니다, \n", i, usecnt[i]);
+	}
 	
 	return 0;
+}
+
+void useitem(int itemnum) {
+	usecnt[itemnum]++;
 }
 
 // git add .
