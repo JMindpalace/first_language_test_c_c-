@@ -2,19 +2,24 @@
 #include <stdio.h>
 #include <math.h>
 
-void pr(char *c) {
-	for (int i = 0; c[i]!='\n' ; i++) {
-		if(c[i] != ' ')
-			printf("%c", c[i]);
-	}
-}
+#include <stdio.h>
+#include <math.h>
 
-int main() { // 4 // 함수 종합 - 3
-	pr("Hello, Wolrd!\n");
-	pr("My name is kim\n");
+int main() // 6 // 1466 : [기초-배열연습] 2차원 배열 순서대로 채우기 1-7
+{
+	int n, m, pr;
+	scanf("%d %d", &n, &m);
+
+	for (int i = 0; i < n; i++) {
+			pr = (n*m)-i;
+		for (int j = 0; j < m; j++) {
+			printf("%d ", pr);
+			pr -=n;
+		}
+		printf("\n");
+	}
 
 	return 0;
-}
 
 // git add .
 // git commit -m "
