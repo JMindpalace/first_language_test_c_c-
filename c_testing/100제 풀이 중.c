@@ -2,16 +2,16 @@
 #include <stdio.h>
 #include <math.h>
 
-void rec(int n) {
-	if (n == 0) return;
-
-	printf("%d", n);
-	rec(n - 1);
-	printf("%d", n);
+void pr(char *c) {
+	for (int i = 0; c[i]!='\n' ; i++) {
+		if(c[i] != ' ')
+			printf("%c", c[i]);
+	}
 }
 
 int main() { // 4 // 함수 종합 - 3
-	rec(5);
+	pr("Hello, Wolrd!\n");
+	pr("My name is kim\n");
 
 	return 0;
 }
