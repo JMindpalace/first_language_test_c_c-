@@ -5,13 +5,13 @@
 #include <stdio.h>
 #include <math.h>
 
-int main() { // 5 // 1474 : [기초-배열연습] 2차원 배열 지그재그 채우기 2-7
+int main() { // 6 // 1475 : [기초-배열연습] 2차원 배열 지그재그 채우기 2-8
 
 	int Arr[101][101], n, m, x=1;
 	scanf("%d %d", &n, &m);
 
 	for (int i = m, k=1; i >= 1; i--, k++) {
-		if (k % 2 == 1) {
+		if (k % 2 == 0) {
 			for (int j = n; j >= 1; j--) {
 				Arr[j][i] = x++;
 			}
