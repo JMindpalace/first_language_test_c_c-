@@ -5,25 +5,29 @@
 #include <stdio.h>
 #include <math.h>
 
-int main() // 9 // 1469 : [기초-배열연습] 2차원 배열 지그재그 채우기 2-2
-{
-	int n, stan;
+int main() { // 1 // 1470 : [기초-배열연습] 2차원 배열 지그재그 채우기 2-3
+
+	int n, x = 1, a[100][100] = {0};
 	scanf("%d", &n);
 
-	for (int i = 1; i <= n; i++) {
-		if (i % 2 != 0) {
-			stan = i * n;
-			for (int j = 0, pr=stan; j < n; j++) {
-				printf("%d ", pr--);
+	for (int i = 0; i < n; i++) {
+		if (i % 2 == 0) {
+			for (int j = 0; j < n; j++) {
+				a[j][i] = x++;
 			}
-			printf("\n");
 		}
 		else {
-			for (int j = 0, pr = stan; j < n; j++) {
-				printf("%d ", ++pr);
+			for (int j = n-1; j >= 0; j--) {
+				a[j][i] = x++;
 			}
-			printf("\n");
 		}
+	}
+
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			printf("%d ", a[i][j]);
+		}
+		printf("\n");
 	}
 	return 0;
 }
