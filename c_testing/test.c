@@ -2,15 +2,21 @@
 #include <stdio.h>
 #include <math.h>
 
-typedef int Point[2];
-typedef Point *PointPtr;
+typedef struct { int x, y; } Point;
 
-int main() // 종합연습문제 - 1
+void pswap(Point *p) {
+	Point tem = p->x;
+	p->x = p->y;
+	p->y = tem;
+};
+
+int main() // 종합연습문제 - 2 // 실행 안됨
 {
-	Point p = { 3, 4};
-	PointPtr pp = &p;
+	Point pos = { 3, 4 };
 
-	printf("%d %d %d\n", **pp, (*pp)[0], (*pp)[1] );
+	pswap(&pos);
+
+	printf("(%d, %d)\n", pos.x, pos.y);
 }
 
 // git add .
