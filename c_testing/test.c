@@ -2,17 +2,15 @@
 #include <stdio.h>
 #include <math.h>
 
+typedef int Point[2];
+typedef Point *PointPtr;
+
 int main()
 {
-	int a, b, c, d;
-	scanf_s("%d",&a); // 17
-	c = a / 10; // 1
-	b = a % 10; // 7
-	d = ((b*10)+c)*2; // 70+1 71
-	if (d >= 100) { d=d-100; }
-	printf("%d\n", d);
-	if (d > 50) { printf("OH MY GOD"); }
-	else { printf("GOOD"); }
+	Point p = { 3, 4};
+	PointPtr pp = &p;
+
+	printf("%d %d %d\n", **pp, (*pp)[0], (*pp)[1] );
 }
 
 // git add .
