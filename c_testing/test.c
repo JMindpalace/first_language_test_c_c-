@@ -2,19 +2,21 @@
 #include <stdio.h>
 #include <math.h>
 
-typedef struct { int x, y; } Point;
+struct Point{
+	int x, y;
 
-void pswap(Point *p) {
-	Point tem = p->x;
-	p->x = p->y;
-	p->y = tem;
+	void pswap() {
+		int tem = x;
+		x = y;
+		y = tem;
+	}
 };
 
-int main() // 종합연습문제 - 2 // 실행 안됨
+int main() // 종합연습문제 - 3
 {
 	Point pos = { 3, 4 };
 
-	pswap(&pos);
+	pos.pswap();
 
 	printf("(%d, %d)\n", pos.x, pos.y);
 }
