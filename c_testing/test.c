@@ -5,7 +5,7 @@
 typedef int Point[2];
 typedef Point *PointPtr;
 
-int main()
+int main() // 종합연습문제 - 1
 {
 	Point p = { 3, 4};
 	PointPtr pp = &p;
